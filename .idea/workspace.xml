@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd800655-d718-47e5-829a-040e056f3ff5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/trashcans.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dump.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/templates/cart_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/templates/error_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/templates/product_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +133,7 @@
       <workItem from="1696316165043" duration="3000" />
       <workItem from="1696316171533" duration="727000" />
       <workItem from="1696318411759" duration="14963000" />
-      <workItem from="1696356365623" duration="4579000" />
+      <workItem from="1696356365623" duration="5185000" />
     </task>
     <servers />
   </component>
