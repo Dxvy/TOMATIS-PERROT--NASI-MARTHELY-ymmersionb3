@@ -1,23 +1,27 @@
 from flask import Flask, jsonify, render_template
-from flask_mysqldb import MySQL
+# from flask_mysqldb import MySQL
 import json
 
-app = Flask(__name__, template_folder="frontend/templates")
+app = Flask(__name__, template_folder="frontend/templates", static_folder="frontend/static")
 
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'trashtalk'
+# app.config['MYSQL_HOST'] = 'localhost'
+# app.config['MYSQL_USER'] = 'root'
+# app.config['MYSQL_PASSWORD'] = ''
+# app.config['MYSQL_DB'] = 'trashtalk'
+#
+# mysql = MySQL(app)
 
-mysql = MySQL(app)
+with open("backend/trashcans.json", "r") as read_file:
+    data = json.load(read_file)
 
 
 @app.route('/', methods=['GET'])
 def get_all_products_data():
-    cursor = mysql.connection.cursor()
-    cursor.execute("SELECT * FROM products")
-    data = cursor.fetchall()
-    cursor.close()
+    # cursor = mysql.connection.cursor()
+    # cursor.execute("SELECT * FROM products")
+    # data = cursor.fetchall()
+    # cursor.close()
+    # return render_template('index.html', products=data)
     return render_template('index.html', products=data)
 
 

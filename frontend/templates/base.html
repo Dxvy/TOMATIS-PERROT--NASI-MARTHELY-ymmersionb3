@@ -3,10 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>TRASHTALK - Your no 1 site for french trashcans.</title>
+
+    <link rel="icon" type="image/x-icon" href="/static/images/Logo-bin.ico">
+    <link rel="stylesheet" href="/static/index.css">
 </head>
 <body>
-menu
-nav bar
+    <header>
+        <div class="search-box">
+            <button class="btn-search"><img src="/static/images//search.png" alt=""></button>
+            <input type="text" class="input-search" placeholder="Search...">
+        </div>
+        <div class="right-header">
+            <div class="shopping-cart">
+                <button>
+                    Cart
+                    <img src="/static/images/shopping_cart.png" alt="">
+                    <span>0</span>
+                </button>
+            </div>
+            <div class="profil">
+                <button>
+                    <img src="/static/images/account.png" alt="">
+                    <span>Account</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="menu">
+        <div class="menu-logo">
+            <img src="/static/images/Logo.png" alt="Logo">
+            <h2>TrashTalk</h2>
+        </div>
+        <div class="menu-links">
+            <button class="menu-links-button"> <img src="/static/images/home.png" alt=""> Explore New</button>
+            <button class="menu-links-button"> <img src="/static/images/list.png" alt=""> Category</button>
+        </div>
+        <div class="quick-action">
+            <HR ALIGN=CENTER WIDTH="150">
+            <h5>Quick Action</h5>
+            <button class="menu-links-button"> <img src="/static/images/add.png" alt=""> Add Product</button>
+        </div>
+        <div class="last-order">
+            <HR ALIGN=CENTER WIDTH="150">
+            <h5>Historic</h5>
+        </div>
+        <div class="menu-connexion">
+            <button class="menu-connexion-button">Log Out <img src="/static/images/logout.png" alt=""></button>
+        </div>
+    </div>
 <!--Add products blocks here-->
 {% block content %}
 {% endblock %}
