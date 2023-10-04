@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd800655-d718-47e5-829a-040e056f3ff5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/static/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/locationiq_api/locationIQ.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/locationiq_api/locationIQ.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/base.jinja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/cart_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/cart_page.jinja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/error_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/error_page.jinja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/locationIQ.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/locationIQ.jinja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/product_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/product_page.jinja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/testindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/homepage.jinja" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/homepage.jinja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +108,8 @@
       <workItem from="1696400326676" duration="22929000" />
       <workItem from="1696432314829" duration="2000" />
       <workItem from="1696432487908" duration="526000" />
-      <workItem from="1696433115826" duration="729000" />
+      <workItem from="1696433115826" duration="950000" />
+      <workItem from="1696440322588" duration="2216000" />
     </task>
     <servers />
   </component>
