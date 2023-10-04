@@ -26,10 +26,9 @@ class DataBase:
 
     def get_product_by_id(self, product_id):
         connection, users, products = self.connect()
-        query = db.select(products).where(products.columns.id == int(product_id))
-        result = connection.execute(query)
-        results_set = result.fetchall()
-        return results_set
+        query = db.select(products).where(products.columns.id == product_id)
+        result = connection.execute(query).first()
+        return result
 
     def get_recommended_products(self):
         connection, users, products = self.connect()

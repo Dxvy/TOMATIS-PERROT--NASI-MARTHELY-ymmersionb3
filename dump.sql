@@ -23,7 +23,9 @@ CREATE TABLE IF NOT EXISTS products (
     price FLOAT NOT NULL,
     description VARCHAR(128) NOT NULL,
     quantity INT NOT NULL,
-    image LONGBLOB
+    image LONGBLOB,
+    image2 LONGBLOB,
+    image3 LONGBLOB
 );
 
 ALTER TABLE users ADD CONSTRAINT unq_email UNIQUE (email);

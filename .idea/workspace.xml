@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd800655-d718-47e5-829a-040e056f3ff5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FrontEnd/static/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/templates/homepage.jinja" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/sys.zb4BAA.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/testindex.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/base.jinja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/cart_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/cart_page.jinja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/error_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/error_page.jinja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/product_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/product_page.jinja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/trashcans.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/trashcans.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/dump.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +138,7 @@
       <workItem from="1696316171533" duration="727000" />
       <workItem from="1696318411759" duration="14963000" />
       <workItem from="1696356365623" duration="6908000" />
-      <workItem from="1696400326676" duration="13620000" />
+      <workItem from="1696400326676" duration="19937000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,72 @@
 {% extends 'base.jinja' %}
 
 {% block content %}
+
+    <div class="right-panel">
+        <h1>Recommandations</h1>
+        <hr>
+        <div class="recommandation">
+            <div class="left-reco">
+                <a href="">
+                    <div id="first">
+                        <div class="description">
+                            <h3>Nom produits</h3>
+                            <p>Prix</p>
+                        </div>
+                        <img src="../../FrontEnd/static/images/Shopping-PNG-Photos.png" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div id="second">
+                        <div class="description">
+                            <h3>Nom produits</h3>
+                            <p>Prix</p>
+                        </div>
+                        <img src="../../FrontEnd/static/images/Shopping-PNG-Photos.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="right-reco">
+                <a href="">
+                    <div id="third">
+                        <div class="description">
+                            <h3>Nom produits</h3>
+                            <p>Prix</p>
+                        </div>
+                        <img src="../../FrontEnd/static/images/Shopping-PNG-Photos.png" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div id="fourth">
+                        <div class="description">
+                            <h3>Nom produits</h3>
+                            <p>Prix</p>
+                        </div>
+                        <img src="../../FrontEnd/static/images/Shopping-PNG-Photos.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <h1>All products</h1>
+        <hr>
+        <div class="all-products">
+            {% for product in products %}
+                <a href="/{{ product.id }}">
+                    <div class="product">
+                        <img src="{{ product.image }}" alt="">
+                        <div class="description">
+                            <h3>{{ product.name }}</h3>
+                            <p>{{ product.price }}</p>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+
 <!--product block for each product-->
     {% for product in products %}
         <div>

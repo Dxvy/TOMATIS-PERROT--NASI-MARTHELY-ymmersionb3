@@ -2,7 +2,7 @@
   {
     "product_id": 1,
     "name": "FÖRNYBAR",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Medium",
     "color": ["White"],
     "waste_sorting": "General",
@@ -13,7 +13,7 @@
   {
     "product_id": 2,
     "name": "ÅTERVINNA",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Small",
     "color": ["Blue"],
     "waste_sorting": "Plastic",
@@ -24,7 +24,7 @@
   {
     "product_id": 3,
     "name": "GLASRÄDDARE",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Large",
     "color": ["Green"],
     "waste_sorting": "Glass",
@@ -35,7 +35,7 @@
   {
     "product_id": 4,
     "name": "FÖRETAGSINSATS",
-    "type": "company",
+    "type": "Company",
     "size": "Extra Large",
     "color": ["Black"],
     "waste_sorting": "General",
@@ -46,7 +46,7 @@
   {
     "product_id": 5,
     "name": "PLASTPIONJÄR",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Medium",
     "color": ["Red"],
     "waste_sorting": "Plastic",
@@ -57,7 +57,7 @@
   {
     "product_id": 6,
     "name": "PAPIRGEMEN",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Small",
     "color": ["White", "Blue"],
     "waste_sorting": "Paper",
@@ -68,7 +68,7 @@
   {
     "product_id": 7,
     "name": "TRÄDGÅRDSSAMLARE",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Medium",
     "color": ["Brown"],
     "waste_sorting": "Green Waste",
@@ -79,7 +79,7 @@
   {
     "product_id": 8,
     "name": "ÅTERANVÄNDBAR",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Small",
     "color": ["Gray"],
     "waste_sorting": "General",
@@ -90,7 +90,7 @@
   {
     "product_id": 9,
     "name": "KARTONGHJÄLTE",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Medium",
     "color": ["Yellow"],
     "waste_sorting": "Cardboard",
@@ -101,7 +101,7 @@
   {
     "product_id": 10,
     "name": "GLÄDJESPRIDARE",
-    "type": "company",
+    "type": "Company",
     "size": "Extra Large",
     "color": ["Black"],
     "waste_sorting": "General",
@@ -112,7 +112,7 @@
   {
     "product_id": 11,
     "name": "PLASTPERFORMANCE",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Medium",
     "color": ["Green"],
     "waste_sorting": "Plastic",
@@ -123,7 +123,7 @@
   {
     "product_id": 12,
     "name": "FÖRETAGSFÖRVALTARE",
-    "type": "company",
+    "type": "Company",
     "size": "Large",
     "color": ["Gray"],
     "waste_sorting": "General",
@@ -134,7 +134,7 @@
   {
     "product_id": 13,
     "name": "MILJÖVÄN",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Small",
     "color": ["Blue"],
     "waste_sorting": "Recycling",
@@ -145,7 +145,7 @@
   {
     "product_id": 14,
     "name": "PAPPERSDROTTNING",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Medium",
     "color": ["Pink"],
     "waste_sorting": "Paper",
@@ -156,7 +156,7 @@
   {
     "product_id": 15,
     "name": "GLASGIGANT",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Large",
     "color": ["Clear"],
     "waste_sorting": "Glass",
@@ -167,7 +167,7 @@
   {
     "product_id": 16,
     "name": "PLASTPIONJÄR",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Medium",
     "color": ["Orange"],
     "waste_sorting": "Plastic",
@@ -178,7 +178,7 @@
   {
     "product_id": 17,
     "name": "BIOAVFALLSHJÄLTE",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Small",
     "color": ["Green"],
     "waste_sorting": "Organic Waste",
@@ -189,7 +189,7 @@
   {
     "product_id": 18,
     "name": "KOMPISÅTERVINNARE",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Medium",
     "color": ["Yellow"],
     "waste_sorting": "Recycling",
@@ -200,7 +200,7 @@
   {
     "product_id": 19,
     "name": "ARBETSPLATSÅTERVINNING",
-    "type": "company",
+    "type": "Company",
     "size": "Extra Large",
     "color": ["Black"],
     "waste_sorting": "General",
@@ -211,7 +211,7 @@
   {
     "product_id": 20,
     "name": "ÅTERANVÄNDBAR",
-    "type": "company",
+    "type": "Company",
     "size": "Large",
     "color": ["Green"],
     "waste_sorting": "Recycling",
@@ -222,7 +222,7 @@
   {
     "product_id": 21,
     "name": "PLASTIKONOM",
-    "type": "company",
+    "type": "Company",
     "size": "Medium",
     "color": ["Blue"],
     "waste_sorting": "Plastic",
@@ -233,7 +233,7 @@
   {
     "product_id": 22,
     "name": "PAPPERSMEKANIK",
-    "type": "company",
+    "type": "Company",
     "size": "Large",
     "color": ["Brown"],
     "waste_sorting": "Paper",
@@ -244,7 +244,7 @@
   {
     "product_id": 23,
     "name": "METALLMASTER",
-    "type": "company",
+    "type": "Company",
     "size": "Medium",
     "color": ["Silver"],
     "waste_sorting": "Metal",
@@ -255,7 +255,7 @@
   {
     "product_id": 24,
     "name": "FÖRPACKNINGSFÖRSVARARE",
-    "type": "company",
+    "type": "Company",
     "size": "Small",
     "color": ["White"],
     "waste_sorting": "Packaging",
@@ -266,7 +266,7 @@
   {
     "product_id": 25,
     "name": "ELEKTRONIKSORTERARE",
-    "type": "company",
+    "type": "Company",
     "size": "Large",
     "color": ["Gray"],
     "waste_sorting": "Electronics",
@@ -277,7 +277,7 @@
   {
     "product_id": 26,
     "name": "BIOAVFALLSKUNGEN",
-    "type": "company",
+    "type": "Company",
     "size": "Small",
     "color": ["Green"],
     "waste_sorting": "Organic Waste",
@@ -288,7 +288,7 @@
   {
     "product_id": 27,
     "name": "ÅTERVUNNEN",
-    "type": "company",
+    "type": "Company",
     "size": "Medium",
     "color": ["Blue"],
     "waste_sorting": "Recycling",
@@ -299,7 +299,7 @@
   {
     "product_id": 28,
     "name": "FÖRNYBARARE",
-    "type": "company",
+    "type": "Company",
     "size": "Large",
     "color": ["Green"],
     "waste_sorting": "General",
@@ -310,7 +310,7 @@
   {
     "product_id": 29,
     "name": "PLASTÅTERANVÄNDARE",
-    "type": "company",
+    "type": "Company",
     "size": "Medium",
     "color": ["White"],
     "waste_sorting": "Plastic",
@@ -321,7 +321,7 @@
   {
     "product_id": 30,
     "name": "PAPPERSBEVARARE",
-    "type": "company",
+    "type": "Company",
     "size": "Large",
     "color": ["Brown"],
     "waste_sorting": "Paper",
@@ -332,7 +332,7 @@
   {
     "product_id": 31,
     "name": "GLASORDNARE",
-    "type": "company",
+    "type": "Company",
     "size": "Medium",
     "color": ["Clear"],
     "waste_sorting": "Glass",
@@ -343,7 +343,7 @@
   {
     "product_id": 32,
     "name": "METALLHANTERARE",
-    "type": "company",
+    "type": "Company",
     "size": "Small",
     "color": ["Silver"],
     "waste_sorting": "Metal",
@@ -354,7 +354,7 @@
   {
     "product_id": 33,
     "name": "FÖRPACKNINGSSKYDDAREN",
-    "type": "company",
+    "type": "Company",
     "size": "Large",
     "color": ["White"],
     "waste_sorting": "Packaging",
@@ -365,7 +365,7 @@
   {
     "product_id":34,
     "name": "ELEKTRONIKSORTERAREN",
-    "type": "company",
+    "type": "Company",
     "size": "Medium",
     "color": ["Gray"],
     "waste_sorting": "Electronics",
@@ -376,7 +376,7 @@
   {
     "product_id": 35,
     "name": "BIOAVFALLSKUNGEN",
-    "type": "company",
+    "type": "Company",
     "size": "Small",
     "color": ["Green"],
     "waste_sorting": "Organic Waste",
@@ -387,7 +387,7 @@
   {
     "product_id": 36,
     "name": "ÅTERVUNNEN",
-    "type": "company",
+    "type": "Company",
     "size": "Medium",
     "color": ["Blue"],
     "waste_sorting": "Recycling",
@@ -398,7 +398,7 @@
   {
     "product_id": 37,
     "name": "FÖRNYBARARE",
-    "type": "company",
+    "type": "Company",
     "size": "Large",
     "color": ["Green"],
     "waste_sorting": "General",
@@ -409,7 +409,7 @@
   {
     "product_id": 38,
     "name": "GRÖNSAKSKOMPIS",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Small",
     "color": ["Green"],
     "waste_sorting": "Organic Waste",
@@ -420,7 +420,7 @@
   {
     "product_id": 39,
     "name": "ÅTERVINNINGSVÄN",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Medium",
     "color": ["Blue"],
     "waste_sorting": "Recycling",
@@ -431,7 +431,7 @@
   {
     "product_id": 40,
     "name": "PAPPERSSAMLAREN",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Large",
     "color": ["White"],
     "waste_sorting": "Paper",
@@ -442,7 +442,7 @@
   {
     "product_id": 41,
     "name": "GLASHANTERAREN",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Medium",
     "color": ["Clear"],
     "waste_sorting": "Glass",
@@ -453,7 +453,7 @@
   {
     "product_id": 42,
     "name": "PLASTÅTERVINNAREN",
-    "type": "domestic",
+    "type": "Domestic",
     "size": "Small",
     "color": ["Blue"],
     "waste_sorting": "Plastic",
