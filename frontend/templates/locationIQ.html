@@ -11,7 +11,8 @@
 
             socket.on('test_responses', function(msg) {
                 $('#choose-address').remove();
-                $('#address-selection').append('<label>Select your address here:<br><select id="choose-address"></select></label>').html();
+                $('#choose-address-label').remove();
+                $('#address-selection').append('<label id="choose-address-label">Select your address here:<br><select id="choose-address"></select></label>').html();
                 for (let dataKey in msg.data) {
                     let address = msg.data[dataKey]
                     $('#choose-address').append('<br>' + `<option value="${address}">` + $('<select/>').text(address).html() + '</option>');
