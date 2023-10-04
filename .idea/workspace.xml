@@ -4,54 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd800655-d718-47e5-829a-040e056f3ff5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FrontEnd/static/images/Logo-bin.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/static/images/Logo-bin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/static/images/Logo.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/static/images/Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/static/images/account.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/static/images/add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/static/images/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/static/images/list.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/static/images/logout.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/static/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/static/images/shopping_cart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/static/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FrontEnd/testindex.html" afterDir="false" />
+    <list default="true" id="86dba3c0-14e2-4c47-ac36-adf51e5357e0" name="Changes" comment="chore(files): fixed files">
+      <change beforePath="$PROJECT_DIR$/.idea/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/trashtalk.5MuxRg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b2ffb166-5763-48d6-bb28-89acdcf49c7f.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b2ffb166-5763-48d6-bb28-89acdcf49c7f/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b2ffb166-5763-48d6-bb28-89acdcf49c7f/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b2ffb166-5763-48d6-bb28-89acdcf49c7f/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b2ffb166-5763-48d6-bb28-89acdcf49c7f/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b2ffb166-5763-48d6-bb28-89acdcf49c7f/storage_v2/_src_/schema/trashtalk.5MuxRg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/IMG/Logo-bin.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/IMG/Logo-bin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/IMG/Logo.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/IMG/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/IMG/account.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/IMG/add.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/IMG/home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/IMG/list.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/IMG/logout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/IMG/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/IMG/shopping_cart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/component/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/component/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/component/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/component/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/component/right-panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/component/right-panel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
-    <execution />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-        <option value="HTML File" />
-      </list>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
     </option>
   </component>
   <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
@@ -72,107 +57,103 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\wamp64\bin\php\php8.1.13\php.exe" />
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="2WDC45eELzMuf1CE4H1S6MXAjrw" />
+  <component name="ProjectId" id="2WHyV2NWYQqFH7ctbMwudZZj6IT" />
   <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
   </component>
   <component name="ProjectViewState">
-    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/cours/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3/dump.sql",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable",
-    "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb",
-      "mysql"
-    ]
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Merging main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Confirmation&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\cours\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3\frontend\static" />
-      <recent name="D:\cours\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3\frontend\style" />
-      <recent name="D:\cours\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3\frontend\templates" />
-      <recent name="D:\cours\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3" />
-      <recent name="D:\cours\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3\frontend" />
+      <recent name="C:\Users\krisf\Desktop\Ynov\B3\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3\frontend\locationiq_api" />
+      <recent name="C:\Users\krisf\Desktop\Ynov\B3\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3\FrontEnd" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\cours\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3\main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cd800655-d718-47e5-829a-040e056f3ff5" name="Changes" comment="" />
-      <created>1696257568878</created>
+      <changelist id="86dba3c0-14e2-4c47-ac36-adf51e5357e0" name="Changes" comment="" />
+      <created>1696403821505</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1696257568878</updated>
-      <workItem from="1696257572056" duration="3000" />
-      <workItem from="1696257581172" duration="3000" />
-      <workItem from="1696257602129" duration="1325000" />
-      <workItem from="1696316005773" duration="130000" />
-      <workItem from="1696316165043" duration="3000" />
-      <workItem from="1696316171533" duration="727000" />
-      <workItem from="1696318411759" duration="14963000" />
-      <workItem from="1696356365623" duration="6436000" />
+      <updated>1696403821505</updated>
+      <workItem from="1696403847570" duration="715000" />
+      <workItem from="1696404592993" duration="5488000" />
+      <workItem from="1696421935569" duration="7875000" />
+      <workItem from="1696430214798" duration="63000" />
     </task>
+    <task id="LOCAL-00001" summary="chore(gitignore): add Pycharm files to .gitignore">
+      <option name="closed" value="true" />
+      <created>1696404086448</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696404086448</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix(gitignore): Pycharm files were not detected by the .gitignore">
+      <option name="closed" value="true" />
+      <created>1696404262873</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696404262873</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnknownFeatures">
-    <option featureType="com.intellij.fileTypeFactory" implementationName="*.template" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore(gitignore): add Pycharm files to .gitignore" />
+    <MESSAGE value="feat(locationiq): add api to allow user to research their address" />
+    <MESSAGE value="fix(gitignore): Pycharm files were not detected by the .gitignore" />
+    <MESSAGE value="chore(files): fixed files" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(files): fixed files" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/templates/locationIQ.html</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TOMATIS_PERROT__NASI_MARTHELY_ymmersionb3$main.coverage" NAME="main Coverage Results" MODIFIED="1696338013920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
+    <SUITE FILE_PATH="coverage/TOMATIS_PERROT__NASI_MARTHELY_ymmersionb3$locationIQ.coverage" NAME="locationIQ Coverage Results" MODIFIED="1696429257444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/frontend/locationiq_api" />
   </component>
 </project>
