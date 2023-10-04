@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cd800655-d718-47e5-829a-040e056f3ff5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/homepage.jinja" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/homepage.jinja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +65,7 @@
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/cours/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3/dump.sql",
+    "last_opened_file_path": "D:/cours/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3/products.csv",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -134,7 +135,7 @@
       <workItem from="1696316171533" duration="727000" />
       <workItem from="1696318411759" duration="14963000" />
       <workItem from="1696356365623" duration="6908000" />
-      <workItem from="1696400326676" duration="21140000" />
+      <workItem from="1696400326676" duration="22641000" />
     </task>
     <servers />
   </component>

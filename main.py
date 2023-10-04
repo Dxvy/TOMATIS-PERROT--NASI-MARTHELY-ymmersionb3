@@ -8,6 +8,7 @@ db.connect()
 
 app = Flask(__name__, template_folder="frontend/templates", static_folder="frontend/static")
 
+
 # main route, needs all products
 # TODO: add recommendation system and search bar
 @app.route('/', methods=['GET'])
