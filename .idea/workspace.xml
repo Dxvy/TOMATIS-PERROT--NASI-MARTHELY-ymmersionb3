@@ -5,60 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd800655-d718-47e5-829a-040e056f3ff5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/environments/variables.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/locationiq_api/locationIQ.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/templates/locationIQ.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/templates/product_page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/testindex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/trashtalk.5MuxRg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/component/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/component/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/component/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/component/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/component/right-panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/component/right-panel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/Logo-bin.ico" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/Logo-bin.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/Logo-bin.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/Logo-bin.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/Logo.ico" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/Logo.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/Logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/Shopping-PNG-Photos.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/Shopping-PNG-Photos.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/account.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/account.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/add.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/add.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/home.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/list.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/list.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/logout.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/logout.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/no-image-available.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/search.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/search.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/shopping_cart.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/shopping_cart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/static/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/templates/base.jinja" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/templates/cart_page.jinja" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/cart_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/templates/error_page.jinja" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/error_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/templates/homepage.jinja" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/homepage.jinja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/templates/product_page.jinja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/trashcans.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/trashcans.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/dump.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/static/images/no-image-available.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/no-image-available.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/static/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/locationiq_api/locationIQ.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/locationiq_api/locationIQ.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/base.jinja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/cart_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/cart_page.jinja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/error_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/error_page.jinja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/locationIQ.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/locationIQ.jinja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/product_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/product_page.jinja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/testindex.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,37 +66,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "git-widget-placeholder": "Merging main",
-    "last_opened_file_path": "D:/cours/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3/products.csv",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.fileTypes",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/cours/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3/products.csv&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mariadb",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\cours\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3\backend" />
       <recent name="D:\cours\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3\frontend\static" />
       <recent name="D:\cours\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3\frontend\style" />
       <recent name="D:\cours\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3\frontend\templates" />
       <recent name="D:\cours\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3" />
-      <recent name="D:\cours\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3\frontend" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -157,7 +115,10 @@
       <workItem from="1696316171533" duration="727000" />
       <workItem from="1696318411759" duration="14963000" />
       <workItem from="1696356365623" duration="6908000" />
-      <workItem from="1696400326676" duration="22744000" />
+      <workItem from="1696400326676" duration="22929000" />
+      <workItem from="1696432314829" duration="2000" />
+      <workItem from="1696432487908" duration="526000" />
+      <workItem from="1696433115826" duration="729000" />
     </task>
     <servers />
   </component>
@@ -166,6 +127,17 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.template" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TOMATIS_PERROT__NASI_MARTHELY_ymmersionb3$main.coverage" NAME="main Coverage Results" MODIFIED="1696338013920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />

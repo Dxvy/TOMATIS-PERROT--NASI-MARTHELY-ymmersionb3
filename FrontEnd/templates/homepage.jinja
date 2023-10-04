@@ -11,7 +11,7 @@
                     <div id="first">
                         <div class="description">
                             <h3>{{ recommendations[0].name }}</h3>
-                            <p>{{ recommendations[0].price }}</p>
+                            <p>{{ recommendations[0].price }} €</p>
                         </div>
 {#                        if image is null then use default image#}
                         {% if recommendations[0].image == null %}
@@ -25,7 +25,7 @@
                     <div id="second">
                         <div class="description">
                             <h3>{{ recommendations[1].name }}</h3>
-                            <p>{{ recommendations[1].price }}</p>
+                            <p>{{ recommendations[1].price }} €</p>
                         </div>
                         <img src="{{ recommendations[1].image }}" alt="{{ recommendations[1].name }} first image">
                     </div>
@@ -36,7 +36,7 @@
                     <div id="third">
                         <div class="description">
                             <h3>{{ recommendations[2].name }}</h3>
-                            <p>{{ recommendations[2].price }}</p>
+                            <p>{{ recommendations[2].price }} €</p>
                         </div>
                         <img src="{{ recommendations[2].image }}" alt="{{ recommendations[2].name }} first image">
                     </div>
@@ -45,7 +45,7 @@
                     <div id="fourth">
                         <div class="description">
                             <h3>{{ recommendations[3].name }}</h3>
-                            <p>{{ recommendations[3].price }}</p>
+                            <p>{{ recommendations[3].price }} €</p>
                         </div>
                         <img src="{{ recommendations[3].image }}" alt="{{ recommendations[3].name }} first image">
                     </div>
@@ -61,26 +61,12 @@
                         <img src="{{ product.image }}" alt="{{ product.name }} first image">
                         <div class="description">
                             <h3>{{ product.name }}</h3>
-                            <p>{{ product.price }}</p>
+                            <p>{{ product.price }} €</p>
                         </div>
                     </div>
                 </a>
             {% endfor %}
         </div>
     </div>
-
-
-
-
-<!--product block for each product-->
-    {% for product in products %}
-        <div>
-            this is a product {{product.name}}
-            {{product.type}}
-            {{product.size}}
-            {{product.price}}
-            {{product.description}}
-        </div>
-    {% endfor %}
 
 {% endblock %}

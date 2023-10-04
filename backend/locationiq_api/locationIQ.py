@@ -15,7 +15,7 @@ socketio = SocketIO(app, async_mode=async_mode)
 
 @app.route('/locationIQ')
 def index():
-    return render_template('locationIQ.html', async_mode=socketio.async_mode)
+    return render_template('locationIQ.jinja', async_mode=socketio.async_mode)
 
 
 # Receive the test request from client and send back a test response
