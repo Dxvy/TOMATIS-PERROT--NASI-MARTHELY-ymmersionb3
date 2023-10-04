@@ -1,7 +1,9 @@
-*{
-    /*font-family: ;*/
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');*{
+    font-family: 'Young Serif', cursive;
 }
-
+a{
+    text-decoration: none;
+}
 /*Header*/
 
 header{
@@ -25,8 +27,8 @@ header{
     height: fit-content;
     position: relative;
 }
+
 .input-search{
-    height: 50px;
     width: 70px;
     border-style: none;
     padding: 10px;
@@ -294,52 +296,159 @@ width: 25%;
 .right-panel{
     background-color: #F2F2F2;
     height: 87.5%;
-    width: 87.5%;
+    width: 85.5%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 1%;
     position: fixed;
     top: 12.5%;
     left: 12.5%;
     z-index: 1;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     border-right: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
 }
 
-.right-panel h1{
+.right-panel a{
+    transition: 0.5s;
 }
 
-.recommandation{
-    width: 100%;
-    height: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*flex-direction: column;*/
+.right-panel a:hover{
+    transform: scale(1.05);
+    transition: all 0.75s ease-in-out;
 }
 
-.left-reco{
-    width: 50%;
+.description{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+::-webkit-scrollbar {
+    width: 0.75em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: lightgray;
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.right-panel h1{
+    margin-left: 3%;
+}
+.right-panel hr{
+width: 95%;
+    margin-left: 3%;
+    margin-top: -1.5%;
+    margin-bottom: 1%;
+}
+.recommandation{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left-reco{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-reco a{
+    margin: 0.5%;
+}
+
 .left-reco div{
-    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.left-reco #first{
+    background: rgb(255,208,214);
+    background: radial-gradient(circle, rgba(255,208,214,1) 0%, rgba(255,231,206,1) 100%);
+border-radius: 30px 25%;
+}
+.left-reco #second{
+    background: rgb(250,236,218);
+    background: radial-gradient(circle, rgba(250,236,218,1) 0%, rgba(215,238,212,1) 100%);
+    border-radius: 30px 25%;
+
+}
+
+.left-reco div img{
+    width: 50%;
+    height: 50%;
 }
 
 .right-reco{
-    width: 50%;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
-
+.right-reco a{
+    margin: 2.5%;
+}
 .right-reco div{
-    background: white;
+    margin-right: 2%;
+}
+.right-reco #third{
+    background: rgb(245,245,245);
+    background: radial-gradient(circle, rgba(245,245,245,1) 0%, rgba(198,198,198,1) 100%);
+border-radius: 5%;
+
+}
+
+.right-reco #fourth{
+    background: rgb(245,245,245);
+    background: radial-gradient(circle, rgba(245,245,245,1) 0%, rgba(198,198,198,1) 100%);
+    border-radius: 5%;
+}
+
+
+.right-reco div img{
+    width: 100%;
+}
+
+.all-products{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+.all-products a{
+    width: 20%;
+    margin: 2.5%;
+}
+.all-products .product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(245,245,245);
+    background: radial-gradient(circle, rgba(245,245,245,1) 0%, rgba(198,198,198,1) 100%);
+    border-radius: 5%;
+}
+.all-products .product img{
+    width: 100%;
+    height: 100%;
 }
