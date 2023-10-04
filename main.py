@@ -1,18 +1,16 @@
 from flask import Flask, jsonify, render_template
-# from flask_mysqldb import MySQL
+import sqlalchemy as db
 import json
 
 app = Flask(__name__, template_folder="frontend/templates", static_folder="frontend/static")
 
-# app.config['MYSQL_HOST'] = 'localhost'
-# app.config['MYSQL_USER'] = 'root'
-# app.config['MYSQL_PASSWORD'] = ''
-# app.config['MYSQL_DB'] = 'trashtalk'
-#
-# mysql = MySQL(app)
+schema = 'trashcans'
+engine = db.create_engine(f'mysql://root:root@localhost:3306/{schema}')
+metadata = db.MetaData(schema=schema)
 
-with open("backend/trashcans.json", "r") as read_file:
-    data = json.load(read_file)
+
+# with open("backend/trashcans.json", "r") as read_file:
+#     data = json.load(read_file)
 
 
 @app.route('/', methods=['GET'])
