@@ -1,2 +1,7 @@
 #Ignore env files
 .env
+
+# PyCharm files
+ .idea
+ *.iml
+ __pycache__
