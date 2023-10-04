@@ -1,13 +1,14 @@
-{% extends 'base.html' %}
+{% extends 'base.jinja' %}
 
 {% block content %}
-    <h1>All products</h1>
-<!--add product block for each product-->
-    {% for product in data %}
+<!--product block for each product-->
+    {% for product in products %}
         <div>
             this is a product {{product.name}}
             {{product.type}}
             {{product.size}}
+            {{product.price}}
+            {{product.description}}
         </div>
     {% endfor %}
 

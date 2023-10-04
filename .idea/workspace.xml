@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd800655-d718-47e5-829a-040e056f3ff5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/sys.zb4BAA.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b2ffb166-5763-48d6-bb28-89acdcf49c7f.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b2ffb166-5763-48d6-bb28-89acdcf49c7f/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b2ffb166-5763-48d6-bb28-89acdcf49c7f/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b2ffb166-5763-48d6-bb28-89acdcf49c7f/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b2ffb166-5763-48d6-bb28-89acdcf49c7f/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b2ffb166-5763-48d6-bb28-89acdcf49c7f/storage_v2/_src_/schema/trashtalk.5MuxRg.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/static/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/templates/homepage.jinja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/testindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/base.jinja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/cart_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/cart_page.jinja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/error_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/error_page.jinja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/templates/product_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/product_page.jinja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -65,29 +67,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/cours/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3/dump.sql&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PythonContentEntriesConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/cours/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3/dump.sql",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.fileTypes",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mariadb&quot;,
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb",
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\cours\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3\frontend\static" />
@@ -142,7 +144,7 @@
       <workItem from="1696316171533" duration="727000" />
       <workItem from="1696318411759" duration="14963000" />
       <workItem from="1696356365623" duration="6908000" />
-      <workItem from="1696400326676" duration="2518000" />
+      <workItem from="1696400326676" duration="13620000" />
     </task>
     <servers />
   </component>
