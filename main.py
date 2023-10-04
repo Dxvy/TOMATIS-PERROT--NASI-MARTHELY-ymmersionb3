@@ -13,15 +13,14 @@ app = Flask(__name__, template_folder="frontend/templates", static_folder="front
 @app.route('/', methods=['GET'])
 def display_all_products_data():
     items = db.get_all_products()
-    recommended = db.get_recommended_products()
-    return render_template('homepage.jinja', products=items, recommended=recommended)
+    recommendations = db.get_recommended_products()
+    return render_template('homepage.jinja', products=items, recommendations=recommendations)
 
 
 # product route, needs all product info
 @app.route('/<int:product_id>', methods=['GET'])
 def get_data_by_id(product_id):
     item = db.get_product_by_id(product_id)
-    print(item)
     return render_template('product_page.jinja', product=item)
 
 

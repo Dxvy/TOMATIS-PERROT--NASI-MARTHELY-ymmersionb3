@@ -7,42 +7,42 @@
         <hr>
         <div class="recommandation">
             <div class="left-reco">
-                <a href="">
+                <a href="{{ recommendations[0].id }}">
                     <div id="first">
                         <div class="description">
-                            <h3>Nom produits</h3>
-                            <p>Prix</p>
+                            <h3>{{ recommendations[0].name }}</h3>
+                            <p>{{ recommendations[0].price }}</p>
                         </div>
-                        <img src="../../FrontEnd/static/images/Shopping-PNG-Photos.png" alt="">
+                        <img src="{{ recommendations[0].image }}" alt="">
                     </div>
                 </a>
-                <a href="">
+                <a href="{{ recommendations[1].id }}">
                     <div id="second">
                         <div class="description">
-                            <h3>Nom produits</h3>
-                            <p>Prix</p>
+                            <h3>{{ recommendations[1].name }}</h3>
+                            <p>{{ recommendations[1].price }}</p>
                         </div>
-                        <img src="../../FrontEnd/static/images/Shopping-PNG-Photos.png" alt="">
+                        <img src="{{ recommendations[1].image }}" alt="">
                     </div>
                 </a>
             </div>
             <div class="right-reco">
-                <a href="">
+                <a href="{{ recommendations[2].id }}">
                     <div id="third">
                         <div class="description">
-                            <h3>Nom produits</h3>
-                            <p>Prix</p>
+                            <h3>{{ recommendations[2].name }}</h3>
+                            <p>{{ recommendations[2].price }}</p>
                         </div>
-                        <img src="../../FrontEnd/static/images/Shopping-PNG-Photos.png" alt="">
+                        <img src="{{ recommendations[2].image }}" alt="">
                     </div>
                 </a>
-                <a href="">
+                <a href="{{ recommendations[3].id }}">
                     <div id="fourth">
                         <div class="description">
-                            <h3>Nom produits</h3>
-                            <p>Prix</p>
+                            <h3>{{ recommendations[3].name }}</h3>
+                            <p>{{ recommendations[3].price }}</p>
                         </div>
-                        <img src="../../FrontEnd/static/images/Shopping-PNG-Photos.png" alt="">
+                        <img src="{{ recommendations[3].image }}" alt="">
                     </div>
                 </a>
             </div>
