@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>All products</h1>
+<!--add product block for each product-->
+    {% for product in data %}
+        <div>
+            this is a product {{product.name}}
+            {{product.type}}
+            {{product.size}}
+        </div>
+    {% endfor %}
+
+{% endblock %}

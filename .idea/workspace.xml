@@ -5,9 +5,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd800655-d718-47e5-829a-040e056f3ff5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/environments/variables.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/locationiq_api/locationIQ.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/templates/locationIQ.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/templates/product_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/testindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/sys.zb4BAA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/681a9abc-4e19-4aff-b15f-6ca90859b6eb/storage_v2/_src_/schema/trashtalk.5MuxRg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/templates/homepage.jinja" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/homepage.jinja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/component/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/component/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/component/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/component/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/component/right-panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/component/right-panel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/Logo-bin.ico" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/Logo-bin.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/Logo-bin.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/Logo-bin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/Logo.ico" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/Logo.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/Logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/Shopping-PNG-Photos.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/Shopping-PNG-Photos.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/account.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/account.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/add.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/add.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/home.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/list.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/list.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/logout.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/logout.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/no-image-available.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/search.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/static/images/shopping_cart.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/shopping_cart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/static/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/templates/base.jinja" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/templates/cart_page.jinja" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/cart_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/templates/error_page.jinja" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/templates/error_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/templates/homepage.jinja" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/templates/homepage.jinja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/templates/product_page.jinja" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/trashcans.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/trashcans.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dump.sql" beforeDir="false" afterPath="$PROJECT_DIR$/dump.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/static/images/no-image-available.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/static/images/no-image-available.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +115,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Merging main",
     "last_opened_file_path": "D:/cours/TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3/products.csv",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -90,35 +141,6 @@
       <recent name="D:\cours\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3\frontend" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\cours\TOMATIS-PERROT--NASI-MARTHELY-ymmersionb3\main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.main" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -135,7 +157,7 @@
       <workItem from="1696316171533" duration="727000" />
       <workItem from="1696318411759" duration="14963000" />
       <workItem from="1696356365623" duration="6908000" />
-      <workItem from="1696400326676" duration="22641000" />
+      <workItem from="1696400326676" duration="22744000" />
     </task>
     <servers />
   </component>
