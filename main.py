@@ -51,11 +51,11 @@ def register_post():
     email = request.form.get('email')
     name = request.form.get('name')
     lastname = request.form.get('lastname')
-    phone = request.form.get('phone')
-    type = request.form.get('type')
+    phone = request.form.get('tel')
+    profile = request.form.get('profile')
     company = request.form.get('company')
     password = request.form.get('password')
-    if db.insert_user(email, name, lastname, phone, type, company, password):
+    if db.insert_user(email, name, lastname, phone, profile, company, password):
         return render_template('login_page.jinja')
     return render_template('register_page.jinja')
 
