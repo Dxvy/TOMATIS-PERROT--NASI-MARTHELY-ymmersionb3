@@ -1003,3 +1003,7 @@ footer img{
     border-bottom-left-radius: var(--radius);
     border-bottom-right-radius: var(--radius);
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
