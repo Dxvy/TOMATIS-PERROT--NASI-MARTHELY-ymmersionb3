@@ -111,5 +111,22 @@ def logout():
     return redirect(url_for('login'))
 
 
+# # marketplace route
+# @app.route('/marketplace', methods=['GET'])
+# def marketplace():
+#     if 'guid' not in session:
+#         redirect(url_for('login'))
+#         return render_template('login_page.jinja')
+#     return render_template('marketplace_page.jinja')
+#
+#
+# @app.route('/marketplace', methods=['POST'])
+# def marketplace_post():
+#     if 'guid' not in session:
+#         redirect(url_for('login'))
+#         return render_template('login_page.jinja')
+#     return render_template('marketplace_page.jinja')
+
+
 if __name__ == "__main__":
     app.run(debug=True)

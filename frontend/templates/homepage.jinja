@@ -15,7 +15,7 @@
                         {% if recommendations[0].image == None %}
                             <img src="/static/images/no-image-available.jpg" alt="{{ recommendations[0].name }} first image">
                         {% else %}
-                            <img src="{{ product.id }}-1" alt="{{ recommendations[0].name }} first image">
+                            <img src="/static/images/{{ recommendations[0].id }}-1.jpeg" alt="{{ recommendations[0].name }} first image">
                         {% endif %}
                     </div>
                 </a>
@@ -28,7 +28,7 @@
                         {% if recommendations[1].image == None %}
                             <img src="/static/images/no-image-available.jpg" alt="{{ recommendations[1].name }} first image">
                         {% else %}
-                            <img src="{{ product.id }}-1" alt="{{ recommendations[1].name }} first image">
+                            <img src="/static/images/{{ recommendations[1].id }}-1.jpeg" alt="{{ recommendations[1].name }} first image">
                         {% endif %}
                     </div>
                 </a>
@@ -43,7 +43,7 @@
                         {% if recommendations[2].image == None %}
                             <img src="/static/images/no-image-available.jpg" alt="{{ recommendations[2].name }} first image">
                         {% else %}
-                            <img src="{{ product.id }}-1" alt="{{ recommendations[2].name }} first image">
+                            <img src="/static/images/{{ recommendations[2].id }}-1.jpeg" alt="{{ recommendations[2].name }} first image">
                         {% endif %}
                     </div>
                 </a>
@@ -56,7 +56,7 @@
                         {% if recommendations[3].image == None %}
                             <img src="/static/images/no-image-available.jpg" alt="{{ recommendations[3].name }} first image">
                         {% else %}
-                            <img src="{{ product.id }}-1" alt="{{ recommendations[3].name }} first image">
+                            <img src="/static/images/{{ recommendations[3].id }}-1.jpeg" alt="{{ recommendations[3].name }} first image">
                         {% endif %}
                     </div>
                 </a>
@@ -68,7 +68,7 @@
             {% for product in products %}
                 <a href="/{{ product.id }}">
                     <div class="product">
-                        <img src="{{ product.id }}-1" alt="{{ product.name }} first image">
+                        <img src="/static/images/{{ product.id }}-1.jpeg" alt="{{ product.name }} first image">
                         <div class="description">
                             <h3>{{ product.name }}</h3>
                             <p>{{ product.price }} €</p>
@@ -78,5 +78,20 @@
             {% endfor %}
         </div>
     </div>
+
+    <script type="text/javascript">
+        const images = document.querySelectorAll('img');
+
+        images.forEach(imgElement => {
+            imgElement.addEventListener('error', () => {
+                replaceWithDefault(imgElement);
+            });
+        });
+
+        function replaceWithDefault(imgElement) {
+            const defaultImage = "/static/images/no-image-available.jpg";
+            imgElement.src = defaultImage;
+        }
+    </script>
 
 {% endblock %}
