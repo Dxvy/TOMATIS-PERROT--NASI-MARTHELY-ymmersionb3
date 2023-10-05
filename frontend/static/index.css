@@ -33,7 +33,7 @@ header {
 }
 
 .input-search {
-    width: 70px;
+    width: 150px;
     border-style: none;
     padding: 10px;
     font-size: 18px;
@@ -42,7 +42,6 @@ header {
     border-radius: 25px;
     transition: all .5s ease-in-out;
     background-color: transparent;
-    padding-right: 40px;
     color: black;
 }
 
@@ -54,6 +53,9 @@ header {
 }
 
 .btn-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50px;
     height: 50px;
     border-style: none;
@@ -153,26 +155,12 @@ h5 {
     font-weight: bold;
 }
 
-hr {
-    border: none;
-    border-top: 1px solid #333;
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    opacity: 25%;
-    font-weight: bold;
-    margin-top: -40%;
-}
-
-hr:after {
-    background: #F2F2F2;
-    position: relative;
-}
-
 .menu {
     background-color: #F2F2F2;
     height: 100%;
     width: 12.5%;
+    min-width: 12.5%;
+    max-width: 12.5%;
     display: flex;
     align-items: center;
     padding: 0 1%;
@@ -186,16 +174,18 @@ hr:after {
 }
 
 .menu-logo {
-    width: 100%;
+    width: 70%;
+    min-width: 70%;
+    max-width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 5%;
-    margin-bottom: -55%;
 }
 
 .menu-logo img {
     width: 25%;
+    max-width: 25%;
     margin-right: 5%;
 }
 
@@ -205,6 +195,7 @@ hr:after {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    border-top: 1px solid lightgray;
 }
 
 .last-order {
@@ -213,6 +204,7 @@ hr:after {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    border-top: 1px solid lightgray;
 }
 
 .menu-links {
@@ -233,7 +225,7 @@ hr:after {
     box-sizing: border-box;
     color: #121212;
     cursor: pointer;
-    display: inline-flex;
+    display: flex;
     flex: 1 1 auto;
     font-family: Inter, sans-serif;
     font-size: 0.8rem;
@@ -242,11 +234,10 @@ hr:after {
     line-height: 1;
     margin: 2.5%;
     outline: none;
-    padding: 1rem 1.2rem;
+    padding: 0.8rem 0.8rem;
     text-align: center;
     text-decoration: none;
     transition: box-shadow .5s, -webkit-box-shadow .5s;
-    white-space: nowrap;
     border: 0;
     user-select: none;
     -webkit-user-select: none;
@@ -259,11 +250,12 @@ hr:after {
     box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .2) 0 6px 20px;
 
 }
-
+.menu-links-button img {
+    margin-right: 10%;
+}
 .menu img {
     background: #fff;
     border-radius: 40%;
-    margin-right: 10%;
 }
 
 .menu-connexion {
@@ -327,8 +319,6 @@ hr:after {
     z-index: 1;
     flex-direction: column;
     justify-content: flex-start;
-    border-right: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
     overflow: scroll;
     overflow-x: hidden;
     scrollbar-width: thin;
@@ -344,6 +334,7 @@ hr:after {
 }
 
 .description {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -368,12 +359,6 @@ hr:after {
     margin-left: 3%;
 }
 
-.right-panel hr {
-    width: 95%;
-    margin-left: 3%;
-    margin-top: -1.5%;
-    margin-bottom: 1%;
-}
 
 .recommandation {
     width: 100%;
@@ -381,27 +366,33 @@ hr:after {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-top: 1px solid lightgray;
+    padding-top: 1.5%;
 }
 
 .left-reco {
-    width: 45%;
+    width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 2.5%;
 }
 
 .left-reco a {
+    width: 80%;
     margin: 0.5%;
 }
 
-.left-reco div {
+.left-reco a div{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2%;
+    width: 100%;
+    height: 5%;
+    margin: 2%;
+    padding-left: 5%;
 }
-
 .left-reco #first {
     background: rgb(255, 208, 214);
     background: radial-gradient(circle, rgba(255, 208, 214, 1) 0%, rgba(255, 231, 206, 1) 100%);
@@ -416,24 +407,24 @@ hr:after {
 }
 
 .left-reco div img {
-    width: 50%;
-    height: 50%;
+    width: 55%;
+    height: 55%;
 }
 
 .right-reco {
-    width: 45%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
 
-.right-reco a {
-    margin: 2.5%;
-}
-
-.right-reco div {
-    margin-right: 2%;
+.right-reco a div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
 }
 
 .right-reco #third {
@@ -461,6 +452,8 @@ hr:after {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: center;
+    padding-top: 1.5%;
+    border-top: 1px solid lightgray;
 }
 
 .all-products a {
@@ -476,6 +469,8 @@ hr:after {
     background: rgb(245, 245, 245);
     background: radial-gradient(circle, rgba(245, 245, 245, 1) 0%, rgba(198, 198, 198, 1) 100%);
     border-radius: 5%;
+    width: 250px;
+    height: 300px;
 }
 
 .all-products .product img {
@@ -502,7 +497,6 @@ hr:after {
     align-content: center;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:900");
 /**
   * style variables
 */
@@ -661,24 +655,8 @@ body {
     margin-top: 80%;
 }
 
-h1 {
-    font-size: 50px;
-    line-height: 50px;
-    color: #fafafa;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    margin-top: -25px;
-}
-
-h2,
-h3 {
+h2 {
     color: black;
-}
-
-h3 {
-    font-size: 50px;
 }
 
 .carousel__indicator {
@@ -814,21 +792,25 @@ h3 {
 }
 
 .shopping-product img{
-    width: 25%;
+    width: 30%;
     height: 100%;
 }
 .shopping-product p{
-    width: 30%;
+    width: 35%;
 }
 .shopping-product .quantity{
     width: 25%;
+    margin: 5%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 .shopping-product .quantity button{
-    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
     height: 10%;
     background-color: transparent;
     cursor: pointer;
@@ -839,14 +821,14 @@ h3 {
     background-color: rgb(128, 128, 128);
     transition: all 0.25s ease-in-out;
 }
-.shopping-product button{
-    width: 3.5%;
-    height: 50%;
+.shopping-product .delete{
+    width: 50px;
+    height: 50px;
     border: none;
     background-color: transparent;
 }
 
-.shopping-product button img{
+.shopping-product .delete img{
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -896,8 +878,10 @@ h3 {
     box-shadow: 0 -1px 0 1px #384e65;
 }
 .shopping .facturation-address{
-    display: none;
+    display: flex;
     margin-bottom: 10%;
+    transition: all 1s linear;
+    opacity: 0;
 }
 footer{
     display: flex;
