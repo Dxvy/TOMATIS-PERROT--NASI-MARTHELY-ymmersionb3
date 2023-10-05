@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+<div class="add-product">
+    <h2>Add a product</h2>
+    <div class="add-info">
+        <select name="type-list" id="type-list">
+            <option>Domestic</option>
+            <option>Company</option>
+        </select>
+        <select name="size-list" id="size-list">
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>Extra Large</option>
+        </select>
+        <input id="name" type="text" placeholder="Name of the product...">
+        <input id="color" type="text" placeholder="Color...">
+        <input id="waste-sorting" type="text" placeholder="Waste sorting...">
+        <input id="price" type="text" placeholder="Price...">
+        <div class="img-product">
+            <p>Image du produit à ajouter</p>
+            <input type="file" id="img-product" name="img-product" accept="image/png, image/jpeg"/>
+        </div>
+        <input id="quantity" type="number" placeholder="Quantity...">
+        <input id="description" type="text" placeholder="Description...">
+    </div>
+    <button class="add">
+        Add product
+    </button>
+</div>
+</body>
+</html>
