@@ -32,6 +32,14 @@ def display_all_products_data():
     return render_template('homepage.jinja', products=items, recommendations=recommendations)
 
 
+@app.route('/search', methods=['GET'])
+def search():
+    product_string = request.args.get('product', '')
+    print(product_string)
+    items = db.get_products_by_string(product_string)
+    return render_template('homepage.jinja', products=items, recommendations=None)
+
+
 # product route, needs all product info
 @app.route('/<int:product_id>', methods=['GET'])
 def get_data_by_id(product_id):

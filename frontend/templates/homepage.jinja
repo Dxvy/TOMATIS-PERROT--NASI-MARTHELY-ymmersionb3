@@ -63,14 +63,17 @@
             </div>
         </div>
         <h1>All products</h1>
+        <hr>
         <div class="all-products">
             {% for product in products %}
                 <a href="/{{ product.id }}">
                     <div class="product">
-                        {% if recommendations[0].image == None %}
-                            <img src="/static/images/no-image-available.jpg" alt="{{ recommendations[0].name }} first image">
-                        {% else %}
-                            <img src="{{ product.image }}" alt="{{ product.name }} first image">
+                        {% if recommendations %}
+                            {% if recommendations[0].image == None %}
+                                <img src="/static/images/no-image-available.jpg" alt="{{ recommendations[0].name }} first image">
+                            {% else %}
+                                <img src="{{ product.image }}" alt="{{ product.name }} first image">
+                            {% endif %}
                         {% endif %}
                         <div class="description">
                             <h3>{{ product.name }}</h3>

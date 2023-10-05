@@ -33,7 +33,7 @@ header {
 }
 
 .input-search {
-    width: 150px;
+    width: 45%;
     border-style: none;
     padding: 10px;
     font-size: 18px;
@@ -357,12 +357,11 @@ h5 {
 
 .right-panel h1 {
     margin-left: 3%;
+    font-size: 200%;
 }
-
 
 .recommandation {
     width: 100%;
-    height: 65%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -380,7 +379,7 @@ h5 {
 }
 
 .left-reco a {
-    width: 80%;
+    width: 70%;
     margin: 0.5%;
 }
 
@@ -409,6 +408,7 @@ h5 {
 .left-reco div img {
     width: 55%;
     height: 55%;
+    margin: 5%;
 }
 
 .right-reco {
@@ -418,7 +418,9 @@ h5 {
     align-items: center;
     flex-direction: row;
 }
-
+.right-reco a{
+    margin-right: 5%;
+}
 .right-reco a div {
     display: flex;
     flex-direction: column;
@@ -443,6 +445,7 @@ h5 {
 
 .right-reco div img {
     width: 100%;
+    margin: 5%;
 }
 
 .all-products {
@@ -504,9 +507,8 @@ h5 {
   * Control & indicator mixin
 */
 .carousel {
-    height: 300px;
-    width: 400px;
-    /*overflow: hidden;*/
+    height: 60%;
+    width: 75%;
     text-align: center;
     position: relative;
     padding: 0;
@@ -650,8 +652,8 @@ body {
 }
 
 .carousel--thumb .carousel__indicator {
-    height: 100px;
-    width: 100px;
+    height: 65px;
+    width: 65px;
     margin-top: 80%;
 }
 
@@ -688,7 +690,7 @@ h2 {
     width: 40%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
