@@ -1,10 +1,13 @@
 from flask import Flask, jsonify, render_template
 from backend.api import DataBase
-
+from backend.utils import convert_to_base64
+from sqlalchemy.orm import Session
 
 db = DataBase('root', '', 'localhost', '3306', 'trashtalk')
 
 db.connect()
+session = Session()
+session.begin()
 
 app = Flask(__name__, template_folder="frontend/templates", static_folder="frontend/static")
 
@@ -29,6 +32,23 @@ def get_data_by_id(product_id):
 @app.route('/cart', methods=['GET'])
 def get_cart():
     return render_template('cart_page.jinja')
+
+
+# login route
+@app.route('/login', methods=['GET'])
+def login():
+    return render_template('login_page.jinja')
+
+
+# register route
+@app.route('/register', methods=['GET'])
+def register():
+    return render_template('register_page.jinja')
+
+
+@app.route('/register', methods=['POST'])
+def register_post():
+    return render_template('register_page.jinja')
 
 
 if __name__ == "__main__":
