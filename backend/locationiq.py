@@ -5,13 +5,13 @@ import requests
 import json
 
 
-app = Flask(__name__, template_folder="../../frontend/templates")
+app = Flask(__name__, template_folder="../frontend/templates")
 socketio = SocketIO(app, async_mode=None)
 
 
 @app.route('/cart')
 def index():
-    return render_template('locationIQ.jinja', async_mode=socketio.async_mode)
+    return render_template('locationiq.jinja', async_mode=socketio.async_mode)
 
 
 @socketio.on('check_address')
