@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="search-box">
-            <button class="btn-search"><img src="/static/images//search.png" alt=""></button>
+            <button class="btn-search"><img src="/static/images/search.png" alt=""></button>
             <input type="text" class="input-search" placeholder="Search...">
         </div>
         <div class="right-header">
@@ -30,26 +30,24 @@
         </div>
     </header>
     <div class="menu">
-        <div class="menu-logo">
+        <a href="/" class="menu-logo">
             <img src="/static/images/Logo.png" alt="Logo">
-            <h2>TrashTalk</h2>
-        </div>
+            <h3>TrashTalk</h3>
+        </a>
         <div class="menu-links">
             <button class="menu-links-button"> <img src="/static/images/home.png" alt=""> Explore New</button>
             <button class="menu-links-button"> <img src="/static/images/list.png" alt=""> Category</button>
         </div>
         <div class="quick-action">
-            <HR ALIGN=CENTER WIDTH="150">
             <h5>Quick Action</h5>
             <button class="menu-links-button"> <img src="/static/images/add.png" alt=""> Add Product</button>
         </div>
         <div class="last-order">
-            <HR ALIGN=CENTER WIDTH="150">
             <h5>Historic</h5>
         </div>
-        <div class="menu-connexion">
+        <a href="/logout" class="menu-connexion">
             <button class="menu-connexion-button">Log Out <img src="/static/images/logout.png" alt=""></button>
-        </div>
+        </a>
     </div>
 <!--Add products blocks here-->
 {% block content %}

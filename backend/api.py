@@ -1,4 +1,5 @@
 import sqlalchemy as db
+from backend.utils import *
 
 
 class DataBase:
@@ -64,11 +65,45 @@ class DataBase:
         results_set = result.fetchall()
         return results_set
 
+    def get_user_by_phone(self, phone):
+        connection, users, products = self.connect()
+        query = db.select(users).where(users.columns.phone == phone)
+        result = connection.execute(query)
+        results_set = result.fetchall()
+        return results_set
+
+    def get_user_password(self, email):
+        connection, users, products = self.connect()
+        query = db.select(users).where(users.columns.email == email)
+        result = connection.execute(query).first()
+        return result.password
+
+    def get_user_guid(self, email):
+        connection, users, products = self.connect()
+        query = db.select(users).where(users.columns.email == email)
+        result = connection.execute(query).first()
+        return result.guid
+
     def insert_user(self, email, name, lastname, phone, type, company, password):
         connection, users, products = self.connect()
         user = self.get_user_by_email(email)
-        if user:
+        user_phone = self.get_user_by_phone(phone)
+        if user or user_phone:
             return False
         query = db.insert(users).values(email=email, name=name, lastname=lastname, phone=phone, type=type, company=company, password=password)
         result = connection.execute(query)
         return True
+
+    def check_login(self, email, password_input):
+        connection, users, products = self.connect()
+        print(email)
+        print(password_input)
+        user = self.get_user_by_email(email)
+        print(user)
+        password = self.get_user_password(email)
+        print(password)
+        if user and check_password_hash(password, password_input):
+            print('Login successful')
+            return True
+        print('Login failed')
+        return False

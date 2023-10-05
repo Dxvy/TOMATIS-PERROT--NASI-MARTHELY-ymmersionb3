@@ -8,26 +8,28 @@
 <body>
 <div class="shopping">
 <h2>My Shopping List</h2>
+<!--    Si aucun article dans le panier-->
     <p class="empty">Your inventory is empty</p>
+<!--    -->
     <div class="shopping-product">
         <a href="">
             <img src="../static/images/Shopping-PNG-Photos.png" alt="">
-            <p>Item Name</p>
+            <p><!--Item Name--></p>
         </a>
         <div class="quantity">
-            <button>-</button>
-            <p>Quantity</p>
-            <button>+</button>
+            <button class="remove">-</button>
+            <p><!--Quantity--></p>
+            <button class="add">+</button>
         </div>
-        <p>Price</p>
-        <button>
+        <p><!--Price--></p>
+        <button class="delete">
             <img src="../static/images/Logo-bin.png" alt="">
         </button>
     </div>
 
     <div class="total">
         <p>Total Cost : </p>
-        <p class="price-total">Price</p>
+        <p class="price-total"><!--Price--></p>
     </div>
     <button class="purchase">Purchase</button>
     <div class="facturation-address">
@@ -42,5 +44,5 @@
     </footer>
 </div>
 </body>
-<script type="text/javascript" src="../../frontend/index.js"></script>
+<script type="text/javascript" src="../static/index.js"></script>
 </html>
