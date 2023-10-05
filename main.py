@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, request, render_template
 from backend.api import DataBase
 from backend.utils import convert_to_base64
 from sqlalchemy.orm import Session
@@ -19,6 +19,14 @@ def display_all_products_data():
     items = db.get_all_products()
     recommendations = db.get_recommended_products()
     return render_template('homepage.jinja', products=items, recommendations=recommendations)
+
+
+@app.route('/search', methods=['GET'])
+def search():
+    product_string = request.args.get('product', '')
+    print(product_string)
+    items = db.get_products_by_string(product_string)
+    return render_template('homepage.jinja', products=items, recommendations=None)
 
 
 # product route, needs all product info
