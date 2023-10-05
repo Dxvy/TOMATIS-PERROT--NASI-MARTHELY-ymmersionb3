@@ -1,30 +1,31 @@
-CREATE DATABASE IF NOT EXISTS trashtalk;
-
-USE trashtalk;
-
-CREATE TABLE IF NOT EXISTS users (
-    guid INT AUTO_INCREMENT PRIMARY KEY,
-    email VARCHAR(100) NOT NULL,
-    name VARCHAR(128) NOT NULL,
-    lastname VARCHAR(128) NOT NULL,
-    phone VARCHAR(32) NOT NULL,
-    type VARCHAR(32) NOT NULL,
-    company VARCHAR(128),
-    password VARCHAR(128) NOT NULL
+create table products
+(
+    id          int auto_increment
+        primary key,
+    name        varchar(128) not null,
+    type        varchar(128) not null,
+    size        varchar(128) not null,
+    color       varchar(128) not null,
+    sorting     varchar(128) not null,
+    price       float        not null,
+    description varchar(128) not null,
+    quantity    int          not null
 );
 
-CREATE TABLE IF NOT EXISTS products (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(128) NOT NULL,
-    type VARCHAR(128) NOT NULL,
-    size VARCHAR(128) NOT NULL,
-    color VARCHAR(128) NOT NULL,
-    sorting VARCHAR(128) NOT NULL,
-    price FLOAT NOT NULL,
-    description VARCHAR(128) NOT NULL,
-    quantity INT NOT NULL,
-    image LONGBLOB
+create table users
+(
+    guid     int auto_increment
+        primary key,
+    email    varchar(100) not null,
+    name     varchar(128) not null,
+    lastname varchar(128) not null,
+    phone    varchar(32)  not null,
+    type     varchar(32)  not null,
+    company  varchar(128) null,
+    password varchar(512) not null,
+    constraint unq_email
+        unique (email),
+    constraint unq_phone
+        unique (phone)
 );
 
-ALTER TABLE users ADD CONSTRAINT unq_email UNIQUE (email);
-ALTER TABLE users ADD CONSTRAINT unq_phone UNIQUE (phone);
