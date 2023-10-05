@@ -1,7 +1,68 @@
 {% extends 'base.jinja' %}
 
 {% block content %}
-    <h1>This is a product {{product.name}}</h1>
-    <p>{{product.type}}</p>
-    <p>{{product.size}}</p>
+
+<div class="product-detail">
+    <div class="carousel-container">
+        <ul class="carousel my-carousel carousel--thumb">
+            <input class="carousel__activator" type="radio" id="K" name="thumb" checked="checked"/>
+            <input class="carousel__activator" type="radio" id="L" name="thumb"/>
+            <input class="carousel__activator" type="radio" id="M" name="thumb"/>
+            <li class="carousel__slide"></li>
+            <li class="carousel__slide"></li>
+            <li class="carousel__slide"></li>
+            <div class="carousel__indicators">
+                <label class="carousel__indicator" for="K"></label>
+                <label class="carousel__indicator" for="L"></label>
+                <label class="carousel__indicator" for="M"></label>
+            </div>
+        </ul>
+    </div>
+    <div class="detailed">
+        <h2>{{ product.name }}</h2>
+        <h2>{{ product.price }}</h2>
+        <div class="info">
+            <div>
+                <p>Quantity: <span>{{ product.quantity }}</span></p>
+                <p>Color: <span>{{ product.color }}</span> </p>
+            </div>
+            <div>
+                <p>Category: <span>{{ product.type }}</span></p>
+                <p>Waste sorting: <span>{{ product.sorting }}</span></p>
+            </div>
+        </div>
+        <button class="add-to-cart">
+            Add to cart <img src="/static/images/shopping_cart.png" alt="">
+        </button>
+        <div class="description-detailed">
+            <h2>Description : </h2>
+            <hr>
+            <p>{{ product.description }}</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .carousel__slide:nth-of-type(1),
+    .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
+        background-image: url("/static/images/{{ product.id }}-1.jpeg");
+        background-size: contain;
+        background-position: center;
+    }
+
+    .carousel__slide:nth-of-type(2),
+    .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
+        background-image: url("/static/images/{{ product.id }}-2.jpeg");
+        background-size: contain;
+        background-position: center;
+    }
+
+    .carousel__slide:nth-of-type(3),
+    .carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
+        background-image: url("/static/images/{{ product.id }}-3.jpeg");
+        background-size: contain;
+        background-position: center;
+    }
+</style>
+
 {% endblock %}
