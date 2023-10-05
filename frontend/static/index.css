@@ -496,8 +496,6 @@ hr:after {
     top: 12.5%;
     left: 12.5%;
     z-index: 1;
-    border-right: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
@@ -768,4 +766,145 @@ h3 {
     margin-left: 0%;
     margin-top: -1.5%;
     margin-bottom: 1%;
+}
+
+/*SHOP*/
+.shopping{
+    background: rgb(245, 245, 245);
+    background: radial-gradient(circle, rgba(245, 245, 245, 1) 0%, rgba(198, 198, 198, 1) 100%);
+    height: 87.5%;
+    width: 87.5%;
+    display: flex;
+    padding: 0 1%;
+    position: fixed;
+    top: 12.5%;
+    left: 12.5%;
+    z-index: 1;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.shopping .empty{
+    width: 90%;
+    height: 100%;
+    /*display: flex;*/
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.shopping-product{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+}
+.shopping-product img{
+    width: 10%;
+    height: 100%;
+}
+.shopping-product p{
+    width: 30%;
+}
+.shopping-product .quantity{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.shopping-product .quantity button{
+    width: 10%;
+    height: 10%;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 5%;
+    transition: all 0.25s ease-in-out;
+}
+.shopping-product .quantity button:hover{
+    background-color: rgb(128, 128, 128);
+    transition: all 0.25s ease-in-out;
+}
+.shopping-product button{
+    width: 3.5%;
+    height: 50%;
+    border: none;
+    background-color: transparent;
+}
+
+.shopping-product button img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.shopping-product button img:hover{
+    transform: scale(1.1) rotate(5deg);
+    transition: all 0.25s ease-in-out;
+}
+
+.shopping .total {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.shopping .total .price-total{
+    border-radius: 10%;
+    width: 7.5%;
+    height: 50%;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.shopping .purchase{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    border: none;
+    border-radius: 5px;
+    background-color: #384e65;
+    color: white;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 2px 2px 0 0 #4c6989;
+
+}
+.shopping .purchase:hover{
+    background-color: #4c6989;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 -1px 0 1px #384e65;
+}
+.shopping .facturation-adress{
+    display: none;
+    margin-bottom: 10%;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
+    width: 5%;
+text-decoration: none
+}
+
+footer img{
+    width: 100%;
+    height: 50%;
+    margin: 2.5%;
 }
