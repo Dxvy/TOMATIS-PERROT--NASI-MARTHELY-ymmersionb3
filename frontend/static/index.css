@@ -33,7 +33,7 @@ header {
 }
 
 .input-search {
-    width: 150px;
+    width: 45%;
     border-style: none;
     padding: 10px;
     font-size: 18px;
@@ -507,9 +507,8 @@ h5 {
   * Control & indicator mixin
 */
 .carousel {
-    height: 300px;
-    width: 400px;
-    /*overflow: hidden;*/
+    height: 60%;
+    width: 75%;
     text-align: center;
     position: relative;
     padding: 0;
@@ -653,8 +652,8 @@ body {
 }
 
 .carousel--thumb .carousel__indicator {
-    height: 100px;
-    width: 100px;
+    height: 65px;
+    width: 65px;
     margin-top: 80%;
 }
 
@@ -691,7 +690,7 @@ h2 {
     width: 40%;
     height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
