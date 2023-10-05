@@ -15,7 +15,7 @@
                         {% if recommendations[0].image == None %}
                             <img src="/static/images/no-image-available.jpg" alt="{{ recommendations[0].name }} first image">
                         {% else %}
-                            <img src="{{ recommendations[0].image }}" alt="{{ recommendations[0].name }} first image">
+                            <img src="{{ product.id }}-1" alt="{{ recommendations[0].name }} first image">
                         {% endif %}
                     </div>
                 </a>
@@ -28,7 +28,7 @@
                         {% if recommendations[1].image == None %}
                             <img src="/static/images/no-image-available.jpg" alt="{{ recommendations[1].name }} first image">
                         {% else %}
-                            <img src="{{ recommendations[1].image }}" alt="{{ recommendations[1].name }} first image">
+                            <img src="{{ product.id }}-1" alt="{{ recommendations[1].name }} first image">
                         {% endif %}
                     </div>
                 </a>
@@ -43,7 +43,7 @@
                         {% if recommendations[2].image == None %}
                             <img src="/static/images/no-image-available.jpg" alt="{{ recommendations[2].name }} first image">
                         {% else %}
-                            <img src="{{ recommendations[2].image }}" alt="{{ recommendations[2].name }} first image">
+                            <img src="{{ product.id }}-1" alt="{{ recommendations[2].name }} first image">
                         {% endif %}
                     </div>
                 </a>
@@ -56,7 +56,7 @@
                         {% if recommendations[3].image == None %}
                             <img src="/static/images/no-image-available.jpg" alt="{{ recommendations[3].name }} first image">
                         {% else %}
-                            <img src="{{ recommendations[3].image }}" alt="{{ recommendations[3].name }} first image">
+                            <img src="{{ product.id }}-1" alt="{{ recommendations[3].name }} first image">
                         {% endif %}
                     </div>
                 </a>
@@ -68,13 +68,7 @@
             {% for product in products %}
                 <a href="/{{ product.id }}">
                     <div class="product">
-                        {% if recommendations %}
-                            {% if recommendations[0].image == None %}
-                                <img src="/static/images/no-image-available.jpg" alt="{{ recommendations[0].name }} first image">
-                            {% else %}
-                                <img src="{{ product.image }}" alt="{{ product.name }} first image">
-                            {% endif %}
-                        {% endif %}
+                        <img src="{{ product.id }}-1" alt="{{ product.name }} first image">
                         <div class="description">
                             <h3>{{ product.name }}</h3>
                             <p>{{ product.price }} €</p>
