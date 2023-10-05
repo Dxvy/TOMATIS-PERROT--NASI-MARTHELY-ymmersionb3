@@ -3,6 +3,7 @@ const facturation = document.querySelector('.facturation-address');
 document.addEventListener('DOMContentLoaded', () => {
     console.log('index.js loaded');
     purchase.addEventListener('click', () => {
-      facturation.style.display = 'flex';
+      // facturation.style.display = 'flex';
+      facturation.style.opacity = '1';
     });
 });
