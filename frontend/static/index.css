@@ -357,6 +357,7 @@ h5 {
 
 .right-panel h1 {
     margin-left: 3%;
+    font-size: 200%;
 }
 
 
@@ -380,7 +381,7 @@ h5 {
 }
 
 .left-reco a {
-    width: 80%;
+    width: 70%;
     margin: 0.5%;
 }
 
@@ -409,6 +410,7 @@ h5 {
 .left-reco div img {
     width: 55%;
     height: 55%;
+    margin: 5%;
 }
 
 .right-reco {
@@ -443,6 +445,7 @@ h5 {
 
 .right-reco div img {
     width: 100%;
+    margin: 5%;
 }
 
 .all-products {
