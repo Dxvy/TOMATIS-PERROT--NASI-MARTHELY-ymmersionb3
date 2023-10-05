@@ -1,5 +1,46 @@
-{% extends 'base.jinja' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+<div class="shopping">
+<h2>My Shopping List</h2>
+    <p class="empty">Your inventory is empty</p>
+    <div class="shopping-product">
+        <a href="">
+            <img src="../static/images/Shopping-PNG-Photos.png" alt="">
+            <p>Item Name</p>
+        </a>
+        <div class="quantity">
+            <button>-</button>
+            <p>Quantity</p>
+            <button>+</button>
+        </div>
+        <p>Price</p>
+        <button>
+            <img src="../static/images/Logo-bin.png" alt="">
+        </button>
+    </div>
 
-{% block content %}
-    <h1>Cart</h1>
-{% endblock %}
+    <div class="total">
+        <p>Total Cost : </p>
+        <p class="price-total">Price</p>
+    </div>
+    <button class="purchase">Purchase</button>
+    <div class="facturation-address">
+        <input type="text" placeholder="Enter your adress...">
+<!--        A changer avec le code du sélecteur d'adresse-->
+    </div>
+    <footer>
+        <a href="https://www.paypal.com/signin?returnUri=https%3A%2F%2Fwww.paypal.com%2Fmyaccount%2Fsummary&state="><img src="../static/images/paypal.png" alt=""></a>
+        <a href=""><img src="../static/images/paysafecard.png" alt=""></a>
+        <a href=""><img src="../static/images/visa.png" alt=""></a>
+        <a href=""><img src="../static/images/mastercard.png" alt=""></a>
+    </footer>
+</div>
+</body>
+<script type="text/javascript" src="../../frontend/index.js"></script>
+</html>
