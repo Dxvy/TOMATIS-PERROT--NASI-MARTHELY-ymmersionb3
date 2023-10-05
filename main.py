@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, request
 from backend.api import DataBase
 from backend.utils import convert_to_base64
 from sqlalchemy.orm import Session
@@ -48,6 +48,15 @@ def register():
 
 @app.route('/register', methods=['POST'])
 def register_post():
+    email = request.form.get('email')
+    name = request.form.get('name')
+    lastname = request.form.get('lastname')
+    phone = request.form.get('phone')
+    type = request.form.get('type')
+    company = request.form.get('company')
+    password = request.form.get('password')
+    if db.insert_user(email, name, lastname, phone, type, company, password):
+        return render_template('login_page.jinja')
     return render_template('register_page.jinja')
 
 

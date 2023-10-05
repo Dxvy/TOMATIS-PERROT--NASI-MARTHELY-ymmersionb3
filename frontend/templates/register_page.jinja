@@ -1,27 +1,28 @@
-<label>
-    <input class="" type="text" name="name" placeholder="Name" required>
-</label>
-<label>
-    <input class="" type="text" name="lastname" placeholder="Last name" required>
-</label>
-<label>
-    <input class="" type="email" name="email" placeholder="Email" required>
-</label>
-<label>
-    <input class="" type="tel" name="tel" placeholder="Phone number" required>
-</label>
-<fieldset>
-    <legend>Select profile:</legend>
+<form method="POST" action="/register">
     <label>
-        <input class="" type="radio" name="company" value="company" checked>
+        <input class="" type="text" name="name" placeholder="Name" required>
     </label>
     <label>
-        <input class="" type="radio" name="personal" value="personal">
+        <input class="" type="text" name="lastname" placeholder="Last name" required>
     </label>
-</fieldset>
-<label>
-    <input class="" type="password" name="password" placeholder="Password" required>
-</label>
-<label>
-    <input class="" type="password" name="password_confirmation" placeholder="Confirm Password" required>
-</label>
+    <label>
+        <input class="" type="email" name="email" placeholder="Email" required>
+    </label>
+    <label>
+        <input class="" type="tel" name="tel" placeholder="Phone number" required>
+    </label>
+    <fieldset>
+        <legend>Select profile:</legend>
+        <input class="" type="radio" name="company" value="company" id="company" checked>
+        <label for="company">Company</label>
+        <input class="" type="radio" name="personal" value="personal" id="personal">
+        <label for="personal">Personal</label>
+    </fieldset>
+    <label>
+        <input class="" type="password" name="password" placeholder="Password" required>
+    </label>
+    <label>
+        <input class="" type="password" name="password_confirmation" placeholder="Confirm Password" required>
+    </label>
+    <button type="submit">Register</button>
+</form>

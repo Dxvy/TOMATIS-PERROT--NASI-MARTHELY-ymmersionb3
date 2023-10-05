@@ -63,3 +63,12 @@ class DataBase:
         result = connection.execute(query)
         results_set = result.fetchall()
         return results_set
+
+    def insert_user(self, email, name, lastname, phone, type, company, password):
+        connection, users, products = self.connect()
+        user = self.get_user_by_email(email)
+        if user:
+            return False
+        query = db.insert(users).values(email=email, name=name, lastname=lastname, phone=phone, type=type, company=company, password=password)
+        result = connection.execute(query)
+        return True
