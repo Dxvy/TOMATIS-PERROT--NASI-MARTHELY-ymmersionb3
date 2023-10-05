@@ -51,6 +51,16 @@ class DataBase:
         results_set = result.fetchall()
         return results_set
 
+    def add_product(self, name, type, size, sorting, color, price, description):
+        connection, users, products = self.connect()
+        query = db.insert(products).values(name=name, type=type, size=size, sorting=sorting, color=color, price=price, description=description)
+        # download image in /static/images as product_id-1.jpeg
+        connection.execute(query)
+        # if product downloaded failed
+        if not self.get_product_by_id(self.get_last_product_id()):
+            return False
+        return True
+
     def get_user_by_id(self, user_id):
         connection, users, products = self.connect()
         query = db.select(users).where(users.columns.id == int(user_id))
@@ -107,3 +117,9 @@ class DataBase:
             return True
         print('Login failed')
         return False
+
+    def get_last_product_id(self):
+        connection, users, products = self.connect()
+        query = db.select(products).order_by(products.columns.id.desc()).limit(1)
+        result = connection.execute(query).first()
+        return result.id

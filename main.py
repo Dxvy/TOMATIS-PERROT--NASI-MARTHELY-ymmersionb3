@@ -111,21 +111,30 @@ def logout():
     return redirect(url_for('login'))
 
 
-# # marketplace route
-# @app.route('/marketplace', methods=['GET'])
-# def marketplace():
-#     if 'guid' not in session:
-#         redirect(url_for('login'))
-#         return render_template('login_page.jinja')
-#     return render_template('marketplace_page.jinja')
-#
-#
-# @app.route('/marketplace', methods=['POST'])
-# def marketplace_post():
-#     if 'guid' not in session:
-#         redirect(url_for('login'))
-#         return render_template('login_page.jinja')
-#     return render_template('marketplace_page.jinja')
+# marketplace route
+@app.route('/marketplace', methods=['GET'])
+def marketplace():
+    if 'guid' not in session:
+        redirect(url_for('login'))
+        return render_template('login_page.jinja')
+    return render_template('marketplace_page.jinja')
+
+
+@app.route('/marketplace', methods=['POST'])
+def marketplace_post():
+    if 'guid' not in session:
+        redirect(url_for('login'))
+        return render_template('login_page.jinja')
+    name = request.form.get('name')
+    type = request.form.get('type-list')
+    size = request.form.get('size-list')
+    sorting = request.form.get('sorting')
+    color = request.form.get('color')
+    price = request.form.get('price')
+    description = request.form.get('description')
+    if db.add_product(name, type, size, sorting, color, price, description):
+        return redirect(url_for('display_all_products_data'))
+    return render_template('marketplace_page.jinja')
 
 
 if __name__ == "__main__":

@@ -1,38 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="../static/index.css">
-</head>
-<body>
+{% extends 'base.jinja' %}
+
+{% block content %}
+
 <div class="add-product">
     <h2>Add a product</h2>
     <div class="add-info">
-        <select name="type-list" id="type-list">
-            <option>Domestic</option>
-            <option>Company</option>
-        </select>
-        <select name="size-list" id="size-list">
-            <option>Small</option>
-            <option>Medium</option>
-            <option>Large</option>
-            <option>Extra Large</option>
-        </select>
-        <input id="name" type="text" placeholder="Name of the product...">
-        <input id="color" type="text" placeholder="Color...">
-        <input id="waste-sorting" type="text" placeholder="Waste sorting...">
-        <input id="price" type="text" placeholder="Price...">
-        <div class="img-product">
-            <p>Image du produit à ajouter</p>
-            <input type="file" id="img-product" name="img-product" accept="image/png, image/jpeg"/>
-        </div>
-        <input id="quantity" type="number" placeholder="Quantity...">
-        <input id="description" type="text" placeholder="Description...">
+        <form action="/marketplace" method="POST">
+            <label for="type-list"></label>
+            <select name="type-list" id="type-list" required>
+                <option value="Domestic">Domestic</option>
+                <option value="Company">Company</option>
+            </select>
+            <label for="size-list"></label>
+            <select name="size-list" id="size-list" required>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+                <option value="Extra Large">Extra Large</option>
+            </select>
+            <label>
+                <input id="name" name="name" type="text" placeholder="Name of the product..." required>
+            </label>
+            <label>
+                <input id="color" name="color" type="text" placeholder="Color..." required>
+            </label>
+            <label>
+                <input id="waste-sorting" name="sorting" type="text" placeholder="Waste sorting..." required>
+            </label>
+            <label>
+                <input id="price" name="price" type="text" placeholder="Price..." required>
+            </label>
+            <div class="img-product">
+                <p>Image 1</p>
+                <input type="file" id="img1-product" name="img1-product" accept="image/jpeg"/>
+                <p>Image 2</p>
+                <input type="file" id="img2-product" name="img2-product" accept="image/jpeg"/>
+                <p>Image 3</p>
+                <input type="file" id="img3-product" name="img3-product" accept="image/jpeg"/>
+            </div>
+            <label>
+                <input id="quantity" name="quantity" type="number" placeholder="Quantity..." required>
+            </label>
+            <label>
+                <input id="description" name="description" type="text" placeholder="Description..." required>
+            </label>
+            <button class="add" type="submit">Add product</button>
+        </form>
     </div>
-    <button class="add">
-        Add product
-    </button>
 </div>
-</body>
-</html>
+
+{% endblock %}
