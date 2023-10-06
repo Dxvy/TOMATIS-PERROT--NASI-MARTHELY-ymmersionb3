@@ -152,5 +152,28 @@ def marketplace_post():
     return render_template('marketplace_page.jinja')
 
 
+@app.route('/api/get_row/<int:item_id>')
+def get_row(item_id):
+    item = db.get_product_by_id(item_id)
+
+    # Check if item is not None
+    if item is not None:
+        # Convert the 'Row' object to a dictionary
+        item_dict = {
+            'id': item.id,
+            'name': item.name,
+            'type': item.type,
+            'size': item.size,
+            'sorting': item.sorting,
+            'color': item.color,
+            'price': item.price,
+            'description': item.description
+        }
+
+        return jsonify(item_dict), 200
+    else:
+        return jsonify({'error': 'Item not found'}), 404
+
+
 if __name__ == "__main__":
     app.run(debug=True)
