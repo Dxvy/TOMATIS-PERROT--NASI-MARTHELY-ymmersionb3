@@ -2,6 +2,7 @@ from flask import Flask, jsonify, render_template, request, redirect, url_for, f
 from werkzeug.security import generate_password_hash
 
 from backend.api import DataBase
+from backend.utils import filter_by_price, filter_by_type, filter_by_size
 from backend.utils import *
 from sqlalchemy.orm import Session
 from flask_session import Session
@@ -21,21 +22,26 @@ app.permanent_session_lifetime = timedelta(minutes=30)
 
 
 # main route, needs all products
-# TODO: add recommendation system and search bar
+# TODO: add recommendation system
 @app.route('/', methods=['GET'])
 def display_all_products_data():
     if 'guid' not in session:
         redirect(url_for('login'))
         return render_template('login_page.jinja')
     items = db.get_all_products()
+
+    if request.args.get("filter") is not None:
+        filter_by_price(items, request.args.get('select-price'))
+        filter_by_type(items, request.args.get('select-type'))
+        filter_by_size(items, request.args.get('select-size'))
     recommendations = db.get_recommended_products()
     return render_template('homepage.jinja', products=items, recommendations=recommendations)
 
 
+# search route, needs all products that match the search string
 @app.route('/search', methods=['GET'])
 def search():
     product_string = request.args.get('product', '')
-    print(product_string)
     items = db.get_products_by_string(product_string)
     return render_template('homepage.jinja', products=items, recommendations=None)
 
