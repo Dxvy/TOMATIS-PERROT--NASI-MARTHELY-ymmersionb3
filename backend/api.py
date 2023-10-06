@@ -1,4 +1,6 @@
 import sqlalchemy as db
+from werkzeug.security import check_password_hash
+
 from backend.utils import *
 
 

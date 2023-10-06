@@ -7,65 +7,67 @@
 {% block content %}
 
     <div class="right-panel">
-        <h1>Recommandations</h1>
-        <div class="recommandation">
-            <div class="left-reco">
-                <a href="{{ recommendations[0].id }}">
-                    <div id="first">
-                        <div class="description">
-                            <h3>{{ recommendations[0].name }}</h3>
-                            <p>{{ recommendations[0].price }} €</p>
+        {% if recommendations %}
+            <h1>Recommandations</h1>
+            <div class="recommandation">
+                <div class="left-reco">
+                    <a href="{{ recommendations[0].id }}">
+                        <div id="first">
+                            <div class="description">
+                                <h3>{{ recommendations[0].name }}</h3>
+                                <p>{{ recommendations[0].price }} €</p>
+                            </div>
+                            {% if recommendations[0].image == None %}
+                                <img src="/static/images/not_available.png" alt="{{ recommendations[0].name }} first image">
+                            {% else %}
+                                <img src="/static/images/{{ recommendations[0].id }}-1.jpeg" alt="{{ recommendations[0].name }} first image">
+                            {% endif %}
                         </div>
-                        {% if recommendations[0].image == None %}
-                            <img src="/static/images/not_available.png" alt="{{ recommendations[0].name }} first image">
-                        {% else %}
-                            <img src="/static/images/{{ recommendations[0].id }}-1.jpeg" alt="{{ recommendations[0].name }} first image">
-                        {% endif %}
-                    </div>
-                </a>
-                <a href="{{ recommendations[1].id }}">
-                    <div id="second">
-                        <div class="description">
-                            <h3>{{ recommendations[1].name }}</h3>
-                            <p>{{ recommendations[1].price }} €</p>
+                    </a>
+                    <a href="{{ recommendations[1].id }}">
+                        <div id="second">
+                            <div class="description">
+                                <h3>{{ recommendations[1].name }}</h3>
+                                <p>{{ recommendations[1].price }} €</p>
+                            </div>
+                            {% if recommendations[1].image == None %}
+                                <img src="/static/images/not_available.png" alt="{{ recommendations[1].name }} first image">
+                            {% else %}
+                                <img src="/static/images/{{ recommendations[1].id }}-1.jpeg" alt="{{ recommendations[1].name }} first image">
+                            {% endif %}
                         </div>
-                        {% if recommendations[1].image == None %}
-                            <img src="/static/images/not_available.png" alt="{{ recommendations[1].name }} first image">
-                        {% else %}
-                            <img src="/static/images/{{ recommendations[1].id }}-1.jpeg" alt="{{ recommendations[1].name }} first image">
-                        {% endif %}
-                    </div>
-                </a>
+                    </a>
+                </div>
+                <div class="right-reco">
+                    <a href="{{ recommendations[2].id }}">
+                        <div id="third">
+                            <div class="description">
+                                <h3>{{ recommendations[2].name }}</h3>
+                                <p>{{ recommendations[2].price }} €</p>
+                            </div>
+                            {% if recommendations[2].image == None %}
+                                <img src="/static/images/not_available.png" alt="{{ recommendations[2].name }} first image">
+                            {% else %}
+                                <img src="/static/images/{{ recommendations[2].id }}-1.jpeg" alt="{{ recommendations[2].name }} first image">
+                            {% endif %}
+                        </div>
+                    </a>
+                    <a href="{{ recommendations[3].id }}">
+                        <div id="fourth">
+                            <div class="description">
+                                <h3>{{ recommendations[3].name }}</h3>
+                                <p>{{ recommendations[3].price }} €</p>
+                            </div>
+                            {% if recommendations[3].image == None %}
+                                <img src="/static/images/not_available.png" alt="{{ recommendations[3].name }} first image">
+                            {% else %}
+                                <img src="/static/images/{{ recommendations[3].id }}-1.jpeg" alt="{{ recommendations[3].name }} first image">
+                            {% endif %}
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="right-reco">
-                <a href="{{ recommendations[2].id }}">
-                    <div id="third">
-                        <div class="description">
-                            <h3>{{ recommendations[2].name }}</h3>
-                            <p>{{ recommendations[2].price }} €</p>
-                        </div>
-                        {% if recommendations[2].image == None %}
-                            <img src="/static/images/not_available.png" alt="{{ recommendations[2].name }} first image">
-                        {% else %}
-                            <img src="/static/images/{{ recommendations[2].id }}-1.jpeg" alt="{{ recommendations[2].name }} first image">
-                        {% endif %}
-                    </div>
-                </a>
-                <a href="{{ recommendations[3].id }}">
-                    <div id="fourth">
-                        <div class="description">
-                            <h3>{{ recommendations[3].name }}</h3>
-                            <p>{{ recommendations[3].price }} €</p>
-                        </div>
-                        {% if recommendations[3].image == None %}
-                            <img src="/static/images/not_available.png" alt="{{ recommendations[3].name }} first image">
-                        {% else %}
-                            <img src="/static/images/{{ recommendations[3].id }}-1.jpeg" alt="{{ recommendations[3].name }} first image">
-                        {% endif %}
-                    </div>
-                </a>
-            </div>
-        </div>
+        {% endif %}
         <h1>All products</h1>
         <hr>
         <div class="filter">
@@ -81,8 +83,8 @@
                 <label class="filter-input">By type
                     <select name="select-type" id="select-type" form="filter-form">
                         <option value="all">All</option>
-                        <option value="Domestic">Only domestic</option>
-                        <option value="Company">Only company</option>
+                        <option value="Domestic">Domestic</option>
+                        <option value="Company">Company</option>
                     </select>
                 </label>
                 <label class="filter-input">By size
@@ -90,8 +92,8 @@
                         <option value="all">All</option>
                         <option value="Small">Small</option>
                         <option value="Medium">Medium</option>
-                        <option value="large">Large</option>
-                        <option value="Extra Large">Extra large</option>
+                        <option value="Large">Large</option>
+                        <option value="Extra Large">Extra Large</option>
                     </select>
                 </label>
                 <input type="submit" class="filter-button" name="filter" value="filter">
@@ -103,9 +105,7 @@
                     <div class="product">
                         <img src="/static/images/{{ product.id }}-1.jpeg" alt="{{ product.name }} first image">
                         <div class="description">
-                            <h2>{{ product.name }}</h2>
-                            <h3>{{ product.type }}</h3>
-                            <p>{{ product.size }}</p>
+                            <h4>{{ product.name }}</h4>
                             <p>{{ product.price }} €</p>
                         </div>
                     </div>
