@@ -1,5 +1,9 @@
 {% extends 'base.jinja' %}
 
+<script>
+
+</script>
+
 {% block content %}
 
     <div class="right-panel">
@@ -64,13 +68,44 @@
         </div>
         <h1>All products</h1>
         <hr>
+        <div class="filter">
+            <form id="filter-form" action="/">
+                <img src="/static/images/funnel.png" alt="funnel">Filter
+                <label class="filter-input">By price
+                    <select name="select-price" id="select-price" form="filter-form">
+                        <option value="not-sorted">Not sorted</option>
+                        <option value="low-to-high">Low to high</option>
+                        <option value="high-to-low">High to low</option>
+                    </select>
+                </label>
+                <label class="filter-input">By type
+                    <select name="select-type" id="select-type" form="filter-form">
+                        <option value="all">All</option>
+                        <option value="Domestic">Only domestic</option>
+                        <option value="Company">Only company</option>
+                    </select>
+                </label>
+                <label class="filter-input">By size
+                    <select name="select-size" id="select-size" form="filter-form">
+                        <option value="all">All</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="Extra Large">Extra large</option>
+                    </select>
+                </label>
+                <input type="submit" class="filter-button" name="filter" value="filter">
+            </form>
+        </div>
         <div class="all-products">
             {% for product in products %}
                 <a href="/{{ product.id }}">
                     <div class="product">
                         <img src="/static/images/{{ product.id }}-1.jpeg" alt="{{ product.name }} first image">
                         <div class="description">
-                            <h3>{{ product.name }}</h3>
+                            <h2>{{ product.name }}</h2>
+                            <h3>{{ product.type }}</h3>
+                            <p>{{ product.size }}</p>
                             <p>{{ product.price }} €</p>
                         </div>
                     </div>

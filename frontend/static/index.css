@@ -481,6 +481,23 @@ h5 {
     height: 100%;
 }
 
+.filter {
+    text-align: start;
+    margin-left: 3%;
+}
+
+.filter img {
+    width: 5%;
+}
+
+.filter-button {
+    margin-left: 2%;
+}
+
+.filter-input {
+    margin-left: 2%;
+}
+
 /*Product*/
 
 .product-detail {
