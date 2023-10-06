@@ -11,6 +11,8 @@
     <div class="notification is-danger">
         {{ messages[0] }}. Go to <a href="{{ url_for('login') }}">login page</a>.
     </div>
+    <div class="align">
+        <div class="grid">
     <form method="POST" action="/register">
         <label>
             <input class="" type="text" name="name" placeholder="Name" required>
@@ -36,6 +38,8 @@
         </label>
         <button type="submit">Register</button>
     </form>
+</div>
+</div>
 </div>
 </body>
 </html>

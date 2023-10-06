@@ -476,6 +476,10 @@ h5 {
     box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .2) 0 6px 20px;
 
 }
+
+.filter-button{
+    width: 20%;
+}
 .menu-links-button img {
     margin-right: 10%;
 }
