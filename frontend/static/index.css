@@ -442,7 +442,7 @@ h5 {
 
 }
 
-.menu-links-button {
+.menu-links-button, .filter-button {
     width: 100%;
     align-items: center;
     background-color: #fff;
@@ -470,7 +470,7 @@ h5 {
     touch-action: manipulation;
 }
 
-.menu-links-button:hover {
+.menu-links-button:hover, .filter-button:hover {
     background: #121212;
     color: #fff;
     box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .2) 0 6px 20px;
