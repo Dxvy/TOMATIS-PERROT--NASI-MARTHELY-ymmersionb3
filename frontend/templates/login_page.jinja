@@ -1,12 +1,9 @@
-{% with messages = get_flashed_messages() %}
-{% if messages %}
-    <div class="notification is-danger">
-        {{ messages[0] }}
-    </div>
-{% endif %}
-{% endwith %}
+<link rel="icon" type="image/x-icon" href="/static/images/Logo-bin.ico">
+<link rel="stylesheet" href="/static/index.css">
+
+
 <div class="login-container">
-    <img src="../../frontend/static/images/Logo.png" alt="">
+    <img src="/static/images/Logo.png" alt="">
     <div class="align">
         <div class="grid">
             <form method="POST" action="/login" class="form login">
@@ -29,7 +26,7 @@
                 <div class="form__field">
                 <button type="submit">Login</button>
                 </div>
-                <p class="text--center">Not a member ? <a href="#">Sign up now</a> <svg class="icon">
+                <p class="text--center">Not a member ? <a href="/register">Sign up now</a> <svg class="icon">
                     <use xlink:href="#icon-arrow-right"></use>
                 </svg></p>
             </form>

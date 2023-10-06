@@ -1,32 +1,38 @@
-{% with messages = get_flashed_messages() %}
-{% if messages %}
-    <div class="notification is-danger">
-        {{ messages[0] }}. Go to <a href="{{ url_for('login') }}">login page</a>.
+<link rel="icon" type="image/x-icon" href="/static/images/Logo-bin.ico">
+<link rel="stylesheet" href="/static/index.css">
+
+<div class="register-container">
+
+    <div class="align">
+        <div class="grid">
+            <form method="POST" action="/register" class="form register">
+                <label>
+                    <input class="" type="text" name="name" placeholder="Name" required>
+                </label>
+                <label>
+                    <input class="" type="text" name="lastname" placeholder="Last name" required>
+                </label>
+                <label>
+                    <input class="" type="email" name="email" placeholder="Email" required>
+                </label>
+                <label>
+                    <input class="" type="tel" name="tel" placeholder="Phone number" required>
+                </label>
+                <fieldset>
+                    <legend>Select profile:</legend>
+                    <input class="" type="radio" name="profile" value="company" id="company" checked>
+                    <label for="company">Company</label>
+                    <input class="" type="radio" name="profile" value="personal" id="personal">
+                    <label for="personal">Personal</label>
+                </fieldset>
+                <label>
+                    <input class="" type="password" name="password" placeholder="Password" required>
+                </label>
+                <button type="submit">Register</button>
+                <p class="text--center">Already a member ? <a href="/login">Log In now</a> <svg class="icon">
+                    <use xlink:href="#icon-arrow-right"></use>
+                </svg></p>
+            </form>
+        </div>
     </div>
-{% endif %}
-{% endwith %}
-<form method="POST" action="/register">
-    <label>
-        <input class="" type="text" name="name" placeholder="Name" required>
-    </label>
-    <label>
-        <input class="" type="text" name="lastname" placeholder="Last name" required>
-    </label>
-    <label>
-        <input class="" type="email" name="email" placeholder="Email" required>
-    </label>
-    <label>
-        <input class="" type="tel" name="tel" placeholder="Phone number" required>
-    </label>
-    <fieldset>
-        <legend>Select profile:</legend>
-        <input class="" type="radio" name="profile" value="company" id="company" checked>
-        <label for="company">Company</label>
-        <input class="" type="radio" name="profile" value="personal" id="personal">
-        <label for="personal">Personal</label>
-    </fieldset>
-    <label>
-        <input class="" type="password" name="password" placeholder="Password" required>
-    </label>
-    <button type="submit">Register</button>
-</form>
+</div>
