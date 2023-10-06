@@ -31,7 +31,7 @@
                 <p>Waste sorting: <span>{{ product.sorting }}</span></p>
             </div>
         </div>
-        <button class="add-to-cart">
+        <button class="add-to-cart" onclick="add_to_cart({{ product.id }})">
             Add to cart <img src="/static/images/shopping_cart.png" alt="">
         </button>
         <div class="description-detailed">
@@ -48,6 +48,7 @@
         background-image: url("/static/images/{{ product.id }}-1.jpeg"), url("/static/images/not_available.png");
         background-size: contain;
         background-position: center;
+        background-repeat: no-repeat;
     }
 
     .carousel__slide:nth-of-type(2),
@@ -55,6 +56,7 @@
         background-image: url("/static/images/{{ product.id }}-2.jpeg"), url("/static/images/not_available.png");
         background-size: contain;
         background-position: center;
+        background-repeat: no-repeat;
     }
 
     .carousel__slide:nth-of-type(3),
@@ -62,7 +64,10 @@
         background-image: url("/static/images/{{ product.id }}-3.jpeg"), url("/static/images/not_available.png");
         background-size: contain;
         background-position: center;
+        background-repeat: no-repeat;
     }
 </style>
+
+<script src="/static/add_to_cart.js"></script>
 
 {% endblock %}

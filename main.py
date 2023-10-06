@@ -65,6 +65,15 @@ def get_cart():
     return render_template('cart_page.jinja')
 
 
+# cart order
+@app.route('/cart', methods=['POST'])
+def post_cart():
+    if 'guid' not in session:
+        redirect(url_for('login'))
+        return render_template('login_page.jinja')
+    return render_template('cart_page.jinja')
+
+
 # login route
 @app.route('/login', methods=['GET'])
 def login():

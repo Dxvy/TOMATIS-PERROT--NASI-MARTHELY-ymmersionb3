@@ -1,13 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="../static/index.css">
-</head>
-<body>
+{% extends 'base.jinja' %}
+
+{% block content %}
+
 <div class="shopping">
 <h2>My Shopping List</h2>
+
+    CREATE EACH ITEM IN THE SHOPPING LIST WITH A FOR LOOP BASED ON JS PROJECT
+
+    <div class="buy-phase"></div>
+
+
+
 <!--    Si aucun article dans le panier-->
     <p class="empty">Your inventory is empty</p>
 <!--    -->
@@ -43,6 +46,6 @@
         <a href=""><img src="../static/images/mastercard.png" alt=""></a>
     </footer>
 </div>
-</body>
-<script type="text/javascript" src="../static/index.js"></script>
-</html>
+<script type="text/javascript" src="/static/index.js"></script>
+
+{% endblock %}
