@@ -234,6 +234,79 @@ p {
 
 }
 
+.grid .register{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="submit"] {
+    inline-size: 100%;
+}
+
+.register label,
+.register input[type="email"],
+.register input[type="password"],
+.register button[type="submit"] {
+    border-radius: var(--loginBorderRadus);
+    padding: 1rem;
+}
+
+.register label {
+    background-color: var(--loginLabelBackgroundColor);
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding-inline: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.register input[type="password"],
+.register input[type="email"] {
+    background-color: var(--loginInputBackgroundColor);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.register button[type="password"]:focus,
+.register button[type="password"]:hover,
+.register input[type="email"]:focus,
+.register input[type="email"]:hover {
+    background-color: var(--loginInputHoverBackgroundColor);
+    transition: background-color 0.3s;
+}
+
+.register button[type="submit"] {
+    background-color: var(--loginSubmitBackgroundColor);
+    color: var(--loginSubmitColor);
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.register button[type="submit"]:focus,
+.register button[type="submit"]:hover {
+    background-color: var(--loginSubmitHoverBackgroundColor);
+}
+
+.register fieldset {
+    border: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.register fieldset label{
+    width:40%;
+    margin-right: 5%;
+    border-radius: 5px;
+    text-align: center;
+}
 /*Header*/
 
 header {
