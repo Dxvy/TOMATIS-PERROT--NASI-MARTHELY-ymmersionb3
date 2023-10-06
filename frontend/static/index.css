@@ -478,7 +478,7 @@ h5 {
 }
 
 .filter-button{
-    width: 10%;
+    width: 7.5%;
     background-color: rgba(51, 51, 51, 0.05);
     border-radius: 8px;
     border-width: 0;
@@ -499,6 +499,11 @@ h5 {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+}
+.filter-button:hover{
+    background-color: rgba(51, 51, 51, 0.1);
+    transition: all 200ms;
+    transform: scale(1.05);
 }
 .menu-links-button img {
     margin-right: 10%;
