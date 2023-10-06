@@ -1,10 +1,7 @@
-from flask import Flask, jsonify, render_template, request, redirect, url_for, flash, session
+from flask import Flask, render_template, request, redirect, url_for, flash, session
 from werkzeug.security import generate_password_hash
-
 from backend.api import DataBase
-from backend.utils import filter_by_price, filter_by_type, filter_by_size
 from backend.utils import *
-from sqlalchemy.orm import Session
 from flask_session import Session
 from datetime import timedelta
 
@@ -41,7 +38,10 @@ def display_all_products_data():
 # search route, needs all products that match the search string
 @app.route('/search', methods=['GET'])
 def search():
-    product_string = request.args.get('product', '')
+    if 'guid' not in session:
+        redirect(url_for('login'))
+        return render_template('login_page.jinja')
+    product_string = request.args.get('product')
     items = db.get_products_by_string(product_string)
     return render_template('homepage.jinja', products=items, recommendations=None)
 

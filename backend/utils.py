@@ -1,6 +1,5 @@
 import base64
 import hashlib
-from werkzeug.security import check_password_hash
 
 
 def convert_to_base64(image):
