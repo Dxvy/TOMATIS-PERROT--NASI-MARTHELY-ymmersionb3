@@ -224,7 +224,13 @@ p {
 }
 
 /*REGISTER*/
-.register{
+.register-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
 }
 
@@ -568,10 +574,11 @@ h5 {
     width: 90%;
     max-width: 90%;
     text-overflow: ellipsis;
-
     margin-bottom: -2%;
 }
-
+.description p{
+    /*margin-top: -1%;*/
+}
 ::-webkit-scrollbar {
     width: 0.75em;
 }
@@ -708,8 +715,9 @@ h5 {
 }
 
 .all-products .product img {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 60%;
+    border-radius: 10px;
 }
 
 .filter {
