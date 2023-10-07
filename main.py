@@ -36,13 +36,30 @@ def display_all_products_data():
 
 
 # search route, needs all products that match the search string
-@app.route('/search', methods=['GET'])
+@app.route('/search', methods=['GET', 'POST'])
 def search():
     if 'guid' not in session:
         redirect(url_for('login'))
         return render_template('login_page.jinja')
+
+    if request.method == 'POST':
+        product_string = request.args.get('product')
+        filter_filter = request.form.get('filter')
+        select_price = request.form.get('select-price')
+        select_type = request.form.get('select-type')
+        select_size = request.form.get('select-size')
+        return redirect(url_for('search', product=product_string, filter=filter_filter, select_price=select_price,
+                                select_type=select_type, select_size=select_size))
+
     product_string = request.args.get('product')
+
     items = db.get_products_by_string(product_string)
+
+    if request.args.get("filter") is not None:
+        filter_by_price(items, request.args.get('select_price'))
+        filter_by_type(items, request.args.get('select_type'))
+        filter_by_size(items, request.args.get('select_size'))
+
     return render_template('homepage.jinja', products=items, recommendations=None)
 
 

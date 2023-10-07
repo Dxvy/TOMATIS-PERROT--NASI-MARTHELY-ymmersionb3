@@ -71,7 +71,7 @@
         <h1>All products</h1>
         <hr>
         <div class="filter">
-            <form id="filter-form" action="/">
+            <form id="filter-form" method="POST">
                 <img src="/static/images/funnel.png" alt="funnel">Filter
                 <label class="filter-input">By price
                     <select name="select-price" id="select-price" form="filter-form">
@@ -105,7 +105,7 @@
                     <div class="product">
                         <img src="/static/images/{{ product.id }}-1.jpeg" alt="{{ product.name }} first image">
                         <div class="description">
-                            <h4>{{ product.name }}</h4>
+                            <h3>{{ product.name }}</h3>
                             <p>{{ product.price }} €</p>
                         </div>
                     </div>
