@@ -4,6 +4,7 @@ from backend.api import DataBase
 from backend.utils import *
 from flask_session import Session
 from datetime import timedelta
+import os
 
 db = DataBase('root', '', 'localhost', '3306', 'trashtalk')
 
@@ -12,6 +13,7 @@ db.connect()
 app = Flask(__name__, template_folder="frontend/templates", static_folder="frontend/static")
 app.config['SESSION_PERMANENT'] = False
 app.config['SESSION_TYPE'] = 'filesystem'
+app.config['UPLOAD_FOLDER'] = './frontend/static/images'
 Session(app)
 
 app.secret_key = 'super secret key'
@@ -36,13 +38,30 @@ def display_all_products_data():
 
 
 # search route, needs all products that match the search string
-@app.route('/search', methods=['GET'])
+@app.route('/search', methods=['GET', 'POST'])
 def search():
     if 'guid' not in session:
         redirect(url_for('login'))
         return render_template('login_page.jinja')
+
+    if request.method == 'POST':
+        product_string = request.args.get('product')
+        filter_filter = request.form.get('filter')
+        select_price = request.form.get('select-price')
+        select_type = request.form.get('select-type')
+        select_size = request.form.get('select-size')
+        return redirect(url_for('search', product=product_string, filter=filter_filter, select_price=select_price,
+                                select_type=select_type, select_size=select_size))
+
     product_string = request.args.get('product')
+
     items = db.get_products_by_string(product_string)
+
+    if request.args.get("filter") is not None:
+        filter_by_price(items, request.args.get('select_price'))
+        filter_by_type(items, request.args.get('select_type'))
+        filter_by_size(items, request.args.get('select_size'))
+
     return render_template('homepage.jinja', products=items, recommendations=None)
 
 
@@ -126,29 +145,31 @@ def logout():
     return redirect(url_for('login'))
 
 
-# marketplace route
-@app.route('/marketplace', methods=['GET'])
-def marketplace():
-    if 'guid' not in session:
-        redirect(url_for('login'))
-        return render_template('login_page.jinja')
-    return render_template('marketplace_page.jinja')
-
-
-@app.route('/marketplace', methods=['POST'])
+@app.route('/marketplace', methods=['GET', 'POST'])
 def marketplace_post():
     if 'guid' not in session:
         redirect(url_for('login'))
         return render_template('login_page.jinja')
-    name = request.form.get('name')
-    type = request.form.get('type-list')
-    size = request.form.get('size-list')
-    sorting = request.form.get('sorting')
-    color = request.form.get('color')
-    price = request.form.get('price')
-    description = request.form.get('description')
-    if db.add_product(name, type, size, sorting, color, price, description):
-        return redirect(url_for('display_all_products_data'))
+    if request.method == 'POST':
+        name = request.form.get('name')
+        type = request.form.get('type-list')
+        size = request.form.get('size-list')
+        sorting = request.form.get('sorting')
+        color = request.form.get('color')
+        price = request.form.get('price')
+        description = request.form.get('description')
+        quantity = request.form.get('quantity')
+
+        if 'img1-product' in request.files and 'img2-product' in request.files and 'img3-product' in request.files:
+            img1 = request.files['img1-product']
+            img2 = request.files['img2-product']
+            img3 = request.files['img3-product']
+            result = db.add_product(name, type, size, sorting, color, price, description, quantity)
+            if result:
+                img1.save(os.path.join(app.config['UPLOAD_FOLDER'], f"{result}-1.jpeg"))
+                img2.save(os.path.join(app.config['UPLOAD_FOLDER'], f"{result}-2.jpeg"))
+                img3.save(os.path.join(app.config['UPLOAD_FOLDER'], f"{result}-3.jpeg"))
+                return redirect(url_for('display_all_products_data'))
     return render_template('marketplace_page.jinja')
 
 
