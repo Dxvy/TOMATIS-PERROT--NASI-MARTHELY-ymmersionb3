@@ -1,8 +1,6 @@
 import sqlalchemy as db
 from werkzeug.security import check_password_hash
 
-from backend.utils import *
-
 
 class DataBase:
     def __init__(self, user, password, host, port, database):
@@ -53,15 +51,15 @@ class DataBase:
         results_set = result.fetchall()
         return results_set
 
-    def add_product(self, name, type, size, sorting, color, price, description):
+    def add_product(self, name, type, size, sorting, color, price, description, quantity):
         connection, users, products = self.connect()
-        query = db.insert(products).values(name=name, type=type, size=size, sorting=sorting, color=color, price=price, description=description)
-        # download image in /static/images as product_id-1.jpeg
-        connection.execute(query)
+        query = db.insert(products).values(name=name, type=type, size=size, sorting=sorting, color=color, price=price, description=description, quantity=quantity)
+        result = connection.execute(query)
+
         # if product downloaded failed
         if not self.get_product_by_id(self.get_last_product_id()):
             return False
-        return True
+        return result.inserted_primary_key[0]
 
     def get_user_by_id(self, user_id):
         connection, users, products = self.connect()

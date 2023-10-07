@@ -4,6 +4,7 @@ from backend.api import DataBase
 from backend.utils import *
 from flask_session import Session
 from datetime import timedelta
+import os
 
 db = DataBase('root', '', 'localhost', '3306', 'trashtalk')
 
@@ -12,6 +13,7 @@ db.connect()
 app = Flask(__name__, template_folder="frontend/templates", static_folder="frontend/static")
 app.config['SESSION_PERMANENT'] = False
 app.config['SESSION_TYPE'] = 'filesystem'
+app.config['UPLOAD_FOLDER'] = './frontend/static/images'
 Session(app)
 
 app.secret_key = 'super secret key'
@@ -134,29 +136,31 @@ def logout():
     return redirect(url_for('login'))
 
 
-# marketplace route
-@app.route('/marketplace', methods=['GET'])
-def marketplace():
-    if 'guid' not in session:
-        redirect(url_for('login'))
-        return render_template('login_page.jinja')
-    return render_template('marketplace_page.jinja')
-
-
-@app.route('/marketplace', methods=['POST'])
+@app.route('/marketplace', methods=['GET', 'POST'])
 def marketplace_post():
     if 'guid' not in session:
         redirect(url_for('login'))
         return render_template('login_page.jinja')
-    name = request.form.get('name')
-    type = request.form.get('type-list')
-    size = request.form.get('size-list')
-    sorting = request.form.get('sorting')
-    color = request.form.get('color')
-    price = request.form.get('price')
-    description = request.form.get('description')
-    if db.add_product(name, type, size, sorting, color, price, description):
-        return redirect(url_for('display_all_products_data'))
+    if request.method == 'POST':
+        name = request.form.get('name')
+        type = request.form.get('type-list')
+        size = request.form.get('size-list')
+        sorting = request.form.get('sorting')
+        color = request.form.get('color')
+        price = request.form.get('price')
+        description = request.form.get('description')
+        quantity = request.form.get('quantity')
+
+        if 'img1-product' in request.files and 'img2-product' in request.files and 'img3-product' in request.files:
+            img1 = request.files['img1-product']
+            img2 = request.files['img2-product']
+            img3 = request.files['img3-product']
+            result = db.add_product(name, type, size, sorting, color, price, description, quantity)
+            if result:
+                img1.save(os.path.join(app.config['UPLOAD_FOLDER'], f"{result}-1.jpeg"))
+                img2.save(os.path.join(app.config['UPLOAD_FOLDER'], f"{result}-2.jpeg"))
+                img3.save(os.path.join(app.config['UPLOAD_FOLDER'], f"{result}-3.jpeg"))
+                return redirect(url_for('display_all_products_data'))
     return render_template('marketplace_page.jinja')
 
 
