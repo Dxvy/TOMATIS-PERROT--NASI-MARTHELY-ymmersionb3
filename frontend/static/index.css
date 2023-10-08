@@ -1783,7 +1783,7 @@ a {
     overflow-x: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 900px){
     .add-product {
         width: 80%;
         height: 80%;
@@ -1820,7 +1820,7 @@ a {
     margin: 1em auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px)  {
 
     .add-product .add-info {
         flex-direction: row;
