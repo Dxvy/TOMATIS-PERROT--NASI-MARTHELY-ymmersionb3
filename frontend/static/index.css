@@ -311,7 +311,8 @@ p {
 /*Header*/
 
 header {
-    background-color: #F2F2F2;
+    background: #3A5A40;
+    /*background: radial-gradient(circle, rgba(218,215,205,1) 0%, rgba(163,177,138,1) 100%);*/
     height: 12.5%;
     width: 87.5%;
     display: flex;
@@ -402,7 +403,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: #A3B18A;
     width: 85px;
     font-size: 1em;
     border-radius: 10%;
@@ -431,7 +432,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, .5);
+    background-color: #A3B18A;
     width: 100px;
     height: 40px;
     font-size: 1em;
@@ -456,7 +457,7 @@ h5 {
 }
 
 .menu {
-    background-color: #F2F2F2;
+    background-color: #3A5A40;
     height: 100%;
     width: 12.5%;
     min-width: 12.5%;
@@ -471,6 +472,7 @@ h5 {
     flex-direction: column;
     justify-content: space-between;
     border-right: 1px solid lightgray;
+    color: #A3B18A;
 }
 
 .menu-logo {
@@ -519,7 +521,7 @@ h5 {
 .menu-links-button {
     width: 100%;
     align-items: center;
-    background-color: #fff;
+    background-color: #A3B18A;
     border-radius: 12px;
     box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
     box-sizing: border-box;
@@ -639,7 +641,7 @@ h5 {
 
 /*Right-panel*/
 .right-panel {
-    background-color: #F2F2F2;
+    background-color: #A3B18A;
     height: 87.5%;
     width: 85.5%;
     display: flex;
@@ -740,14 +742,14 @@ h5 {
 }
 
 .left-reco #first {
-    background: rgb(255, 208, 214);
-    background: radial-gradient(circle, rgba(255, 208, 214, 1) 0%, rgba(255, 231, 206, 1) 100%);
+    background: rgb(254,250,224);
+    background: radial-gradient(circle, rgba(254,250,224,1) 0%, rgba(163,177,138,1) 100%);
     border-radius: 30px 25%;
 }
 
 .left-reco #second {
-    background: rgb(250, 236, 218);
-    background: radial-gradient(circle, rgba(250, 236, 218, 1) 0%, rgba(215, 238, 212, 1) 100%);
+    background: rgb(254,250,224);
+    background: radial-gradient(circle, rgba(254,250,224,1) 0%, rgba(163,177,138,1) 100%);
     border-radius: 30px 25%;
 
 }
@@ -780,16 +782,15 @@ h5 {
 }
 
 .right-reco #third {
-    background: rgb(245, 245, 245);
-    background: radial-gradient(circle, rgba(245, 245, 245, 1) 0%, rgba(198, 198, 198, 1) 100%);
+    background: rgb(254,250,224);
+    background: radial-gradient(circle, rgba(254,250,224,1) 0%, rgba(163,177,138,1) 100%);
     border-radius: 5%;
 
 }
 
 .right-reco #fourth {
-    background: rgb(245, 245, 245);
-    background: radial-gradient(circle, rgba(245, 245, 245, 1) 0%, rgba(198, 198, 198, 1) 100%);
-    border-radius: 5%;
+    background: rgb(254,250,224);
+    background: radial-gradient(circle, rgba(254,250,224,1) 0%, rgba(163,177,138,1) 100%);   border-radius: 5%;
 }
 
 
@@ -820,16 +821,16 @@ h5 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(245, 245, 245);
-    background: radial-gradient(circle, rgba(245, 245, 245, 1) 0%, rgba(198, 198, 198, 1) 100%);
+    background: rgb(254,250,224);
+    background: radial-gradient(circle, rgba(254,250,224,1) 0%, rgba(163,177,138,1) 100%);
     border-radius: 5%;
     width: 250px;
     height: 300px;
 }
 
 .all-products .product img {
-    width: 70%;
-    height: 60%;
+    width: 80%;
+    height: 50%;
     border-radius: 10px;
 }
 
@@ -853,8 +854,8 @@ h5 {
 /*Product*/
 
 .product-detail {
-    background: rgb(249, 240, 223);
-    background: radial-gradient(circle, rgba(249, 240, 223, 1) 0%, rgba(254, 254, 254, 1) 100%);
+    background: rgb(254,250,224);
+    background: radial-gradient(circle, rgba(254,250,224,1) 0%, rgba(221,161,94,1) 100%);
     height: 87.5%;
     width: 87.5%;
     display: flex;
@@ -1268,8 +1269,8 @@ footer img {
 
 /*Add Product*/
 .add-product {
-    background: rgb(255, 208, 214);
-    background: radial-gradient(circle, rgba(255, 208, 214, 1) 0%, rgba(255, 231, 206, 1) 100%);
+    background: rgb(221,161,94);
+    background: radial-gradient(circle, rgba(221,161,94,1) 0%, rgba(188,108,37,1) 100%);
     display: flex;
     padding: 0 1%;
     position: fixed;
