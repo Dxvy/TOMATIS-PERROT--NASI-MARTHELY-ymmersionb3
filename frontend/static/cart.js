@@ -1,16 +1,38 @@
-function decreaseItemInCart() {
-    // amount -= 1
-    // if amount == 0, remove object from cart
-    // save cart to local storage
-    // update cart number in html
+function decreaseItemInCart(clicked_id) {
+    let cart = getCart();
+    let item = getCartItem(clicked_id);
+    if (item.amount === 1) {
+        deleteItemInCart(clicked_id);
+        return;
+    }
+    for (let key in cart) {
+        if (cart[key].id === clicked_id) {
+            cart[key].amount -= 1;
+            let amountElement = document.getElementById("amount-" + clicked_id);
+            amountElement.innerHTML = cart[key].amount;  // Update the amount in the HTML
+            break;
+        }
+    }
+    window.localStorage.setItem("cart", JSON.stringify(cart));
+    console.log("Updated cart:", cart);
 
     updateCartLength();
 }
 
-function increaseItemInCart() {
-    // amount += 1
-    // save cart to local storage
-    // update cart number in html
+function increaseItemInCart(clicked_id) {
+    let cart = getCart();
+    for (let key in cart) {
+        if (cart[key].id === clicked_id) {
+            cart[key].amount += 1;
+            let amountElement = document.getElementById("amount-" + clicked_id);
+            amountElement.innerHTML = cart[key].amount;  // Update the amount in the HTML
+            break;
+        }
+    }
+    window.localStorage.setItem("cart", JSON.stringify(cart));
+    console.log("Updated cart:", cart);
+
+    updateCartLength();
 
     updateCartLength();
 }
@@ -53,10 +75,6 @@ function getCartItem(id) {
         }
     }
     return null;
-}
-
-function saveCart() {
-    // save cart to local storage
 }
 
 function updateCartLength() {
@@ -139,13 +157,13 @@ function createItemsInCart() {
                 </div>
                 <div class="item-management">
                     <div class="add-more-number hide">
-                        <div class="add-more">
+                        <div class="add-more" onclick="increaseItemInCart(${item['id']})">
                             <i class="fa-solid fa-plus"></i>
                         </div>
-                        <div class="add-less">
+                        <div class="add-less" onclick="decreaseItemInCart(${item['id']})">
                             <i class="fa-solid fa-minus"></i>
                         </div>
-                        <div class="more-number">${cartAmount}</div>
+                        <div class="more-number" id="amount-${item['id']}">${cartAmount}</div>
                     </div>
                     <div class="delete-item" onclick="deleteItemInCart(${item['id']})">Delete</div>
                 </div>
