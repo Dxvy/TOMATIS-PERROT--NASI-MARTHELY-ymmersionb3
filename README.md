@@ -31,6 +31,16 @@ Our project is using many tehcnologies:
 - An environment to manage the dependencies
 
 # Dependencies
+
+The file requirements.txt contain all the dependencies used in the project:
+- flask : a python web framework, used for the server-side of the website.
+    - flask-socketio : a flask extension, used for the user-side of the website.
+    - flask-session : a flask extension, used for the managing the session on the user-side of the website.
+- requests : a library for web request, used for the api call.
+- python-dotenv: a library used to store environments variables.
+- sqlalchemy : a library used to query the database.
+- werkzeug : a Web Server Gateway Interface, used to hash the users passwords.
+
 # Project Structure
 The projetc is structured as follows :
 - /backend : The folder of the backend section
