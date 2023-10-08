@@ -17,20 +17,42 @@ function increaseItemInCart() {
 
 function deleteItemInCart(clicked_id) {
     document.getElementById(clicked_id).remove();
-    // remove item from local storage
-    // let cart = getCart();
-    // delete cart[clicked_id];
-    window.localStorage.setItem("cart", JSON.stringify(cart));
-    if (document.querySelectorAll(".item").length === 0) {
-        let buyPhase = document.querySelector(".buy-phase");
-        buyPhase.innerHTML = "Your cart is empty";
+    console.log("Item removed from DOM:", clicked_id);
+
+    let cart = getCart();
+
+    for (let key in cart) {
+        if (cart[key].id === clicked_id) {
+            console.log("Item removed from cart:", cart[key]);
+            cart.splice(key, 1);  // Remove the item from the cart array
+            if (cart.length === 0) {
+                window.localStorage.setItem("cart", JSON.stringify([]));
+                console.log("Updated cart:", cart);
+                break;
+            }
+            console.log("Updated cart:", cart);
+            break;
+        }
     }
+
+    window.localStorage.setItem("cart", JSON.stringify(cart));
+    console.log("Updated cart:", cart);
 
     updateCartLength();
 }
 
 function getCart() {
     return JSON.parse(window.localStorage.getItem('cart')) || {};
+}
+
+function getCartItem(id) {
+    let cart = getCart();
+    for (let key in cart) {
+        if (cart[key].id === id) {
+            return cart[key];
+        }
+    }
+    return null;
 }
 
 function saveCart() {
@@ -40,12 +62,14 @@ function saveCart() {
 function updateCartLength() {
     let cart = getCart();
     let cartLength = 0;
-    // need to add the amount of each item in cart
-    for (let key in cart) {
-        // add amount of each item in cart
-        cartLength += cart[key].amount;
+    // if cart is empty
+    if (cart.length === 0 || cart === "[]") {
+        cartLength = 0;
+    } else {
+        for (let key in cart) {
+            cartLength += cart[key].amount;
+        }
     }
-    // update cart number in html
     document.getElementById("cart-length").innerHTML = cartLength.toString();
 }
 
